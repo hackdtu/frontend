@@ -1,0 +1,35 @@
+<div layout-fill>
+    <md-card layout-padding>
+        <form action="http://178.62.41.110:88/patient" method="GET" layout="column">
+            <input ng-hide="true" name="uid" value="1234">
+            <md-input-container class="md-block">
+                <!-- Use floating placeholder instead of label -->
+                <input ng-model="dis.category" name="typeof" type="text" placeholder="Category" ng-required="true">
+            </md-input-container>
+            <md-input-container class="md-block">
+                <!-- Use floating placeholder instead of label -->
+                <input ng-model="dis.duration" name="duration" type="number" placeholder="Duration (min)" ng-required="true">
+            </md-input-container>
+            <div flex layout="row">
+                <md-input-container flex="70" class="md-block">
+                    <!-- Use floating placeholder instead of label -->
+                    <input ng-model="dis.medicine" name="medicine" type="text" placeholder="Medicine" ng-required="true">
+                </md-input-container>
+                <md-input-container flex="30">
+                    <label>Enter date</label>
+                    <input name="date" ng-model="dis.date" />
+                </md-input-container>
+            </div>
+            <div flex="30" layout="column">
+                <p style="color:#9F9F9F;">Severity</p>
+                <md-list layout="row">
+                    <md-list-item ng-repeat="range in ranges">
+                        {{range.value}} <input type="radio" name="severity" value="{{range.value}}">
+                    </md-list-item>
+                </md-list>
+            </div>
+            <md-button class="md-raised md-primary" type="submit" style="width: 60px;">Submit</md-button>
+        </form>
+        {{dis.category}} {{dis.duration}} {{dis.medicine}} {{dis.date}}
+    </md-card>
+</div>

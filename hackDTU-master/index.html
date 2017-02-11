@@ -1,0 +1,503 @@
+<!DOCTYPE>
+<html lang="en" ng-app="socialApp" style="margin-bottom: 50px;">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+     maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+    <link rel="stylesheet" href="dependencies/css/angular-material.min.css">
+    <link href="dependencies/css/Material+Icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <!-- treeview -->
+    <link rel="stylesheet" type="text/css" href="css/angular.treeview.css">
+    <!-- CK editor -->
+    <link href="ckeditor/samples/css/samples.css" rel="stylesheet">
+    <link href="ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" rel="stylesheet">
+
+    <!-- Angular-tour -->
+    <link href="bower_components/angular-tour/dist/angular-tour.css" rel="stylesheet" type="text/css" />
+
+
+    <title>The Social Network</title>
+</head>
+
+<body ui-tour ui-tour-on-show="welcome()" style="overflow: hidden; margin-bottom: 50px !important;" layout="column" ng-controller="AppController">
+    <!--Toolbar-->
+    <div ng-controller="ToolbarController as tbc">
+        <!--Main Toolbar -->
+        <md-toolbar layout="row" ng-hide="tbc.showSearch()" layout-align="center center" md-whiteframe="5">
+            <!-- First tour element -->
+            <md-button style="margin-left: 10px;" class="padMarg0" ng-hide="showButton" aria-label="menu" ng-click="toggleIcons()">
+                <md-icon md-font-set="md">menu</md-icon>
+            </md-button>
+            <md-button style="margin-left: 10px;" class="padMarg0 makingWidthSmall" ng-show="showButton" aria-label="menu" ng-click="toggleLeft()">
+                <md-icon md-font-set="md">menu</md-icon>
+            </md-button>
+            <span flex="3" gt-md></span>
+            <h3 style="color: white;">Dashboard</h3>
+            <span flex></span>
+            <!-- Second tour Element -->
+            <md-button tour-step tour-step-title="Step 1" tour-step-content="<div>Here you can see your all activity</div><button id='info'>info</button>" tour-step-order="0" tour-step-placement="bottom" class="makingWidthSmall" aria-label="search" ng-click="tbc.toggleSearch()"
+                data-step="2" data-intro="Second tip">
+                <md-icon md-font-set="md">search</md-icon>
+            </md-button>
+            <md-button class="makingWidthSmall" aria-label="search" id="completeBtn" ng-click="tour.start()">
+                <md-icon md-font-set="md">first_page</md-icon>
+            </md-button>
+            <md-button class="makingWidthSmall" aria-label="search" id="activityBoxBtn">
+                <md-icon md-font-set="md">last_page</md-icon>
+            </md-button>
+            <md-menu>
+                <md-button ng-click="$mdOpenMenu($event)" class="md-icon-button">
+                    <md-icon md-font-set="md" md-menu-origin>phone</md-icon>
+                </md-button>
+                <md-menu-content>
+                    <md-menu-item>
+                        <md-button>
+                            <md-icon class="md">call</md-icon>Item 1</md-button>
+                    </md-menu-item>
+                    <md-menu-item>
+                        <md-button>
+                            <md-icon class="md">call</md-icon>Item 2</md-button>
+                    </md-menu-item>
+                    <md-menu-item>
+                        <md-button>
+                            <md-icon class="md">call</md-icon>Item 3</md-button>
+                    </md-menu-item>
+                </md-menu-content>
+            </md-menu>
+
+            <!-- Third tour item here -->
+            <md-button class="makingWidthSmall" aria-label="options" ng-click="tbc.toggleSidenav('right')">
+                <md-icon md-font-set="md">more_vert</md-icon>
+            </md-button>
+        </md-toolbar>
+        <!-------------------------------------------------------------------------------------------------------  -->
+        <!--Search Toolbar -->
+        <md-toolbar style="height: 54px;" layout="row" class="md-hue-1" ng-show="tbc.showSearch()" layout-align="center center" md-whiteframe="5">
+            <div class="md-toolbar-tools">
+                <md-button ng-click="tbc.toggleSearch()" aria-label="Back">
+                    <md-icon md-font-set="md">arrow_back</md-icon>
+                </md-button>
+                <h3 flex="10">Back</h3>
+                <md-input-container md-theme="input" flex>
+                    <label>&nbsp;</label>
+                    <input placeholder="enter search" />
+                </md-input-container>
+                <md-button aria-label="search" ng-click="tbc.toggleSearch()">
+                    <md-icon md-font-set="md">search</md-icon>
+                </md-button>
+                <md-button aria-label="options" ng-click="tbc.toggleSidenav('right')">
+                    <md-icon md-font-set="md">more_vert</md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+    </div>
+    <div layout="row" layout-fill role="main" style="overflow: hidden;">
+        <!--Fab button -->
+        <md-button class="md-fab md-fab-bottom-right" aria-label="add">
+            <md-icon md-font-set="md">add</md-icon>
+        </md-button>
+        <md-content flex md-scroll-y layout="row">
+            <md-sidenav style="position: fixed; margin-top: 54px;" layout="column" class="md-sidenav-left md-whiteframe-10dp md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')" ng-class="{'noText': iconsOnly}">
+                <!-- <md-toolbar class="md-hue-2" style="min-height: 54px;">
+                    <span flex></span>
+                    <div layout="column" class="md-toolbar-tools-bottom inset">
+                        <div ng-class="{'none': AppCtrl.iconsOnly}">
+                            <img src="img/profile_small.jpg" alt="Profile picture" style="border-radius: 60%;">
+                        </div>
+                        <div ng-class="{'none': AppCtrl.iconsOnly}">Firstname Lastname</div>
+                        <div ng-class="{'none': AppCtrl.iconsOnly}">email@domain.com</div>
+                        <div style="margin-top: 10px;" ng-class="{'none': AppCtrl.iconsOnly}">
+                            <div class="dropdown">
+                                <button style="background: transparent; padding-left: 0px;" onclick="myFunction()" class="dropbtn">More</button>
+                                <div id="myDropdown" class="dropdown-content animated fadeInRight">
+                                    <a href="#home">Profile</a>
+                                    <a href="#about">Contact</a>
+                                    <a href="#contact">Mail Box</a>
+                                    <md-divider></md-divider>
+                                    <a href="#">Logout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </md-toolbar>
+                <!-- Fourth tour item -->
+                <md-list ng-controller="SidenavController as sc">
+                    <!--Item 1 -->
+                    <md-list-item ng-repeat="setting in sc.settings" layout="row" class="left-sidenav" href="{{setting.url}}" layout-align="start start" id="{{$index}}">
+                        <a class="sidenavLink" md-ink-ripple layout="row" layout-align="start center">
+                            <div class="inset">
+                                <md-icon md-font-set="md">{{setting.icon}}</md-icon>
+                            </div>
+                            <div class="inset" ng-class="{'none': iconsOnly}">{{setting.name}}</div>
+                        </a>
+                    </md-list-item>
+                    <md-divider></md-divider>
+                    <md-subheader ng-class="{'none': iconsOnly}">Management</md-subheader>
+                    <!--Item 1 -->
+                    <md-list-item ng-repeat="label in sc.labels | limitTo: 1">
+                        <a md-ink-ripple class="sidenavLink" layout="row" layout-align="start center">
+                            <div class="inset">
+                                <md-icon md-font-set="md" style="color:{{label.color}}">open_in_new</md-icon>
+                            </div>
+                            <div class="inset" ng-class="{'none': iconsOnly}">{{label.name}}</div>
+                        </a>
+                    </md-list-item>
+
+                </md-list>
+            </md-sidenav>
+
+            <div ng-class="{'marginToView':!showButton}" flex ui-view style="display: flex; justify-content: center; align-items: center; margin-bottom: 50px;"></div>
+
+            <!--Right Sidenav-->
+            <md-sidenav class="md-sidenav-right" md-white-frame="10" md-component-id="right">
+                <md-tabs md-stretch-tabs='always' layout-fill md-border-bottom style="border-color: yellow;">
+                    <md-tab flex="grow" id="tab1">
+                        <md-tab-label style="width: 100%;"><i class="material-icons">mail</i>
+                        </md-tab-label>
+                        <md-tab-body>
+                            <md-list style="padding: 0px;margin-bottom: 100px;" flex>
+                                <md-list-item style="border-bottom: 1px solid #E0E0E0;" class="md-3-line" ng-repeat="message in messages" ng-click="null">
+                                    <img style="margin: 0px 20px 0px 20px;" ng-src="{{message.face}}?{{$index}}" class="md-avatar" alt="{{message.name}}" />
+                                    <div style="margin: 0px 20px 0px 0px;" class="md-list-item-text" layout="column">
+                                        <h3>{{ message.name }}</h3>
+                                        <h4>{{ message.message }}</h4>
+                                        <p>{{ message.time }}</p>
+                                    </div>
+                                </md-list-item>
+                            </md-list>
+                        </md-tab-body>
+                    </md-tab>
+                    <md-tab id="tab2">
+                        <md-tab-label flex><i class="material-icons">notifications_none</i></md-tab-label>
+                        <md-tab-body style="margin-bottom: 100px;">
+                            <md-list style="padding: 0px; margin-bottom: 100px;" flex ng-repeat="title in notification_title">
+                                <md-toolbar layout="row" style="background-color: #FAFAFA; color: #00BCDB;">
+                                    <div class="md-toolbar-tools">
+                                        <span>{{title.title}}</span>
+                                    </div>
+                                </md-toolbar>
+                                <md-list-item style="display: flex; justify-content: center; align-items: center;" layout="row" ng-if="title.title == noti.title_name" class="md-2-line" ng-repeat="noti in notifications">
+                                    <img flex="10" style="width: 24px; height: 24px;" ng-src="{{noti.title_icon}}?{{$index}}" class="md-avatar" alt="{{noti.title_name}}" />
+                                    <p flex="grow">{{ noti.message }}</p>
+                                    <p flex="30">{{ noti.time }}</p>
+                                </md-list-item>
+                            </md-list>
+                        </md-tab-body>
+                    </md-tab>
+                    <md-tab id="tab3">
+                        <md-tab-label flex><i class="material-icons">person</i></md-tab-label>
+                        <md-tab-body>
+                            <md-list style="padding: 0px;margin-bottom: 100px;" flex>
+                                <md-toolbar layout="row" style="background-color: #FAFAFA; color: #00BCDB;">
+                                    <div class="md-toolbar-tools">
+                                        <span>Account Settings</span>
+                                    </div>
+                                </md-toolbar>
+                                <md-list-item layout="row" class="md-1-line">
+                                    <div flex style="display: flex; justify-content: center; align-items: center;">
+                                        <i style="margin: 0px 32px 0 0px;" class="material-icons">location_on</i>
+                                        <p flex>Show my location</p>
+                                        <md-switch style="margin: 0px 0px 0px 32px" ng-model="switch.cb1" aria-label="Switch 1"></md-switch>
+                                    </div>
+                                </md-list-item>
+                                <md-list-item layout="row" class="md-1-line">
+                                    <div flex style="display: flex; justify-content: center; align-items: center;">
+                                        <i style="margin: 0px 32px 0 0px;" class="material-icons">face</i>
+                                        <p flex>Show my avatar</p>
+                                        <md-switch style="margin: 0px 0px 0px 32px" ng-model="switch.cb2" aria-label="Switch 1"></md-switch>
+                                    </div>
+                                </md-list-item>
+                                <md-list-item layout="row" class="md-1-line">
+                                    <div flex style="display: flex; justify-content: center; align-items: center;">
+                                        <i style="margin: 0px 32px 0 0px;" class="material-icons">notifications_active</i>
+                                        <p flex>Send me notifications</p>
+                                        <md-switch style="margin: 0px 0px 0px 32px" ng-model="switch.cb3" aria-label="Switch 1"></md-switch>
+                                    </div>
+                                </md-list-item>
+                                <md-toolbar layout="row" style="background-color: #FAFAFA; color: #00BCDB;">
+                                    <div class="md-toolbar-tools">
+                                        <span>Chat Settings</span>
+                                    </div>
+                                </md-toolbar>
+                                <md-list-item layout="row" class="md-1-line">
+                                    <div flex style="display: flex; justify-content: center; align-items: center;">
+                                        <i style="margin: 0px 32px 0 0px;" class="material-icons">person</i>
+                                        <p flex>Show my username</p>
+                                        <md-switch style="margin: 0px 0px 0px 32px" ng-model="switch.cb4" aria-label="Switch 1"></md-switch>
+                                    </div>
+                                </md-list-item>
+                                <md-list-item layout="row" class="md-1-line">
+                                    <div flex style="display: flex; justify-content: center; align-items: center;">
+                                        <i style="margin: 0px 32px 0 0px;" class="material-icons">contacts</i>
+                                        <p flex>Make my profile public</p>
+                                        <md-switch style="margin: 0px 0px 0px 32px" ng-model="switch.cb5" aria-label="Switch 1"></md-switch>
+                                    </div>
+                                </md-list-item>
+                                <md-list-item layout="row" class="md-1-line">
+                                    <div flex style="display: flex; justify-content: center; align-items: center;">
+                                        <i style="margin: 0px 32px 0 0px;" class="material-icons">backup</i>
+                                        <p flex>Allow cloud backups</p>
+                                        <md-switch style="margin: 0px 0px 0px 32px" ng-model="switch.cb6" aria-label="Switch 1"></md-switch>
+                                    </div>
+                                </md-list-item>
+                                <md-toolbar layout="row" style="background-color: #FAFAFA; color: #00BCDB;">
+                                    <div class="md-toolbar-tools">
+                                        <span>User Statistics</span>
+                                    </div>
+                                </md-toolbar>
+                                <md-list-item layout="row" class="md-2-line">
+                                    <div flex style="padding-top: 16px; display: flex; justify-content: start; align-items: center;" layout="column">
+                                        <md-progress-linear md-mode="determinate" value="{{statistics.storage_space}}"></md-progress-linear>
+                                        <p layout-fill class="md-subheader">Storage Space( 120/160)</p>
+                                    </div>
+                                </md-list-item>
+                                <md-list-item layout="row" class="md-2-line">
+                                    <div flex style="padding-top:16px;display: flex; justify-content: start; align-items: center;" layout="column">
+                                        <md-progress-linear md-mode="determinate" value="{{statistics.bandwidth_usage}}"></md-progress-linear>
+                                        <p layout-fill class="md-subheader">Bandwidth Usage(20/100Gb)</p>
+                                    </div>
+                                </md-list-item>
+                                <md-list-item layout="row" class="md-2-line">
+                                    <div flex style="padding-top:16px; display: flex; justify-content: start; align-items: center;" layout="column">
+                                        <md-progress-linear md-mode="determinate" value="{{statistics.memory_usage}}"></md-progress-linear>
+                                        <p layout-fill class="md-subheader">Memory Usage(1/8 Gb)</p>
+                                    </div>
+                                </md-list-item>
+                                <md-toolbar layout="row" style="background-color: #FAFAFA; color: #00BCDB;">
+                                    <div class="md-toolbar-tools">
+                                        <span>Server Statistics</span>
+                                    </div>
+                                </md-toolbar>
+                                <md-list-item layout="row" class="md-2-line">
+                                    <div flex style="padding-top: 16px; display: flex; justify-content: start; align-items: center;" layout="column">
+                                        <md-progress-linear md-mode="determinate" value="{{statistics.storage_space_server}}"></md-progress-linear>
+                                        <p layout-fill class="md-subheader">Storage Space( 130/160)</p>
+                                    </div>
+                                </md-list-item>
+                                <md-list-item layout="row" class="md-2-line">
+                                    <div flex style="padding-top:16px;display: flex; justify-content: start; align-items: center;" layout="column">
+                                        <md-progress-linear md-mode="determinate" value="{{statistics.bandwidth_usage_server}}"></md-progress-linear>
+                                        <p layout-fill class="md-subheader">Bandwidth Usage(50/100Gb)</p>
+                                    </div>
+                                </md-list-item>
+                                <md-list-item layout="row" class="md-2-line">
+                                    <div flex style="padding-top:16px; display: flex; justify-content: start; align-items: center;" layout="column">
+                                        <md-progress-linear md-mode="determinate" value="{{statistics.memory_usage_server}}"></md-progress-linear>
+                                        <p layout-fill class="md-subheader">Memory Usage(1/8 Gb)</p>
+                                    </div>
+                                </md-list-item>
+                            </md-list>
+                        </md-tab-body>
+                    </md-tab>
+                </md-tabs>
+            </md-sidenav>
+        </md-content>
+    </div>
+
+
+
+    <script src="dependencies/js/angular.min.js"></script>
+    <script src="dependencies/js/angular-animate.min.js"></script>
+    <script src="dependencies/js/angular-aria.min.js"></script>
+    <script src="dependencies/js/angular-messages.min.js"></script>
+    <script src="dependencies/js/angular-touch.min.js"></script>
+    <script src="dependencies/js/angular-material.min.js"></script>
+    <script src="dependencies/js/angular-ui-router.min.js"></script>
+
+    <!--dependencies:js-->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/ngSmoothScroll/lib/angular-smooth-scroll.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/ez-ng/dist/ez-ng.js"></script>
+    <script src="bower_components/angular-hotkeys/build/hotkeys.js"></script>
+    <!--end dependencies-->
+    <!--Angular UI Tour-->
+    <script src="bower_components/angular-ui-tour/dist/angular-ui-tour.js"></script>
+    <!-- CK-editor -->
+    <script src="ckeditor/ckeditor.js"></script>
+    <script src="ckeditor/samples/js/sample.js"></script>
+    <script src="bower_components/angular-ckeditor/angular-ckeditor.js"></script>
+
+    <!-- treeview -->
+    <script type="text/javascript" src="js/angular.treeview.js"></script>
+    <!-- Intojs 
+    <script src="js/intro.js"></script>
+    -->
+    <script src="js/app.js"></script>
+
+    <!--controllers -->
+    <script src="js/controllers/ToolbarController.js"></script>
+    <script src="js/controllers/SidenavController.js"></script>
+    <script src="js/controllers/AppController.js"></script>
+    <script src="js/controllers/ContactsController2.js"></script>
+    <script src="js/controllers/ckeditorController.js"></script>
+    <script src="js/controllers/teamLeaderBoardController.js"></script>
+    <script src="js/controllers/bookmarkController.js"></script>
+    <script src="js/controllers/dnsController.js"></script>
+    <script src="js/controllers/filledUpFormController.js"></script>
+
+
+
+    <!--directives -->
+    <script src="js/directives/userAvatar.js"></script>
+
+    <!-- chart.js -->
+    <script src="bower_components/chart.js/dist/Chart.min.js"></script>
+    <script>
+        var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+
+    <script>
+        // This is for tour
+
+        $(document).ready(function() {
+            document.getElementById('activityBoxBtn').addEventListener('click', function() {
+                introJs().addSteps([{
+                    element: document.querySelectorAll('#activityToolTip1')[0],
+                    intro: "Ok, wasn't that fun?",
+                    position: 'bottom'
+                }, {
+                    element: document.querySelectorAll('#avtivityToolTip2')[0],
+                    intro: "Ok, wasn't that fun?",
+                    position: 'bottom'
+                }]).setOptions({
+                    'showStepNumbers': 'false',
+                    'scrollToElement': 'true'
+                }).start();
+            });
+
+            document.getElementById('completeBtn').addEventListener('click', function() {
+                introJs().setOptions({
+                    'showStepNumbers': 'false',
+                    'scrollToElement': 'true'
+                }).start();
+            });
+            console.log("ready!");
+        });
+    </script>
+    <script>
+        // This is for side navbar.
+        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        // This is for the colour change when something is selected from left sidenav.
+        $(document).ready(function() {
+            $("#0").click(function(e) {
+                $(".selectedTab").removeClass("selectedTab");
+                $(this).addClass("selectedTab");
+                e.stopPropagation();
+            });
+            $("#1").click(function(e) {
+                $(".selectedTab").removeClass("selectedTab");
+                $(this).addClass("selectedTab");
+                e.stopPropagation();
+            });
+            $("#2").click(function(e) {
+                $(".selectedTab").removeClass("selectedTab");
+                $(this).addClass("selectedTab");
+                e.stopPropagation();
+            });
+            $("#3").click(function(e) {
+                $(".selectedTab").removeClass("selectedTab");
+                $(this).addClass("selectedTab");
+                e.stopPropagation();
+            });
+            $("#4").click(function(e) {
+                $(".selectedTab").removeClass("selectedTab");
+                $(this).addClass("selectedTab");
+                e.stopPropagation();
+            });
+            $("#5").click(function(e) {
+                $(".selectedTab").removeClass("selectedTab");
+                $(this).addClass("selectedTab");
+                e.stopPropagation();
+            });
+            $("#6").click(function(e) {
+                $(".selectedTab").removeClass("selectedTab");
+                $(this).addClass("selectedTab");
+                e.stopPropagation();
+            });
+            $("#7").click(function(e) {
+                $(".selectedTab").removeClass("selectedTab");
+                $(this).addClass("selectedTab");
+                e.stopPropagation();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#leadersCard1').hover(
+                function() {
+                    $(this).addClass('md-whiteframe-10dp')
+                },
+                function() {
+                    $(this).removeClass('md-whiteframe-2dp')
+                }
+            );
+
+            function testingAlert() {
+                alert("hello");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

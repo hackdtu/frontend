@@ -1,0 +1,2453 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/local/bin/npm', 'install', 'gulp' ]
+2 info using npm@4.0.5
+3 info using node@v7.5.0
+4 verbose config Skipping project config: /home/raounak/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData gulp
+9 silly fetchNamedPackageData gulp
+10 silly mapToRegistry name gulp
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'gulp',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   escapedName: 'gulp',
+13 silly mapToRegistry   name: 'gulp',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri https://registry.npmjs.org/gulp
+15 verbose request uri https://registry.npmjs.org/gulp
+16 verbose request no auth needed
+17 info attempt registry request try #1 at 6:41:54 AM
+18 verbose request id db9d25f585a58886
+19 verbose etag W/"589bf711-1cda5"
+20 verbose lastModified Thu, 09 Feb 2017 04:58:57 GMT
+21 http request GET https://registry.npmjs.org/gulp
+22 http 304 https://registry.npmjs.org/gulp
+23 verbose headers { date: 'Sat, 11 Feb 2017 01:14:57 GMT',
+23 verbose headers   via: '1.1 varnish',
+23 verbose headers   'cache-control': 'max-age=300',
+23 verbose headers   etag: 'W/"589bf711-1cda5"',
+23 verbose headers   age: '247',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'x-served-by': 'cache-cdg8729-CDG',
+23 verbose headers   'x-cache': 'HIT',
+23 verbose headers   'x-cache-hits': '3',
+23 verbose headers   'x-timer': 'S1486775697.510978,VS0,VE0',
+23 verbose headers   vary: 'Accept-Encoding' }
+24 silly get cb [ 304,
+24 silly get   { date: 'Sat, 11 Feb 2017 01:14:57 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     'cache-control': 'max-age=300',
+24 silly get     etag: 'W/"589bf711-1cda5"',
+24 silly get     age: '247',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-cdg8729-CDG',
+24 silly get     'x-cache': 'HIT',
+24 silly get     'x-cache-hits': '3',
+24 silly get     'x-timer': 'S1486775697.510978,VS0,VE0',
+24 silly get     vary: 'Accept-Encoding' } ]
+25 verbose etag https://registry.npmjs.org/gulp from cache
+26 verbose get saving gulp to /home/raounak/.npm/registry.npmjs.org/gulp/.cache.json
+27 verbose correctMkdir /home/raounak/.npm correctMkdir not in flight; initializing
+28 silly install normalizeTree
+29 silly loadCurrentTree Finishing
+30 silly loadIdealTree Starting
+31 silly install loadIdealTree
+32 silly cloneCurrentTree Starting
+33 silly install cloneCurrentTreeToIdealTree
+34 silly cloneCurrentTree Finishing
+35 silly loadShrinkwrap Starting
+36 silly install loadShrinkwrap
+37 silly loadShrinkwrap Finishing
+38 silly loadAllDepsIntoIdealTree Starting
+39 silly install loadAllDepsIntoIdealTree
+40 silly resolveWithNewModule gulp@3.9.1 checking installable status
+41 silly cache add args [ 'gulp', null ]
+42 verbose cache add spec gulp
+43 silly cache add parsed spec Result {
+43 silly cache add   raw: 'gulp',
+43 silly cache add   scope: null,
+43 silly cache add   escapedName: 'gulp',
+43 silly cache add   name: 'gulp',
+43 silly cache add   rawSpec: '',
+43 silly cache add   spec: 'latest',
+43 silly cache add   type: 'tag' }
+44 silly addNamed gulp@latest
+45 verbose addNamed "latest" is being treated as a dist-tag for gulp
+46 info addNameTag [ 'gulp', 'latest' ]
+47 silly mapToRegistry name gulp
+48 silly mapToRegistry using default registry
+49 silly mapToRegistry registry https://registry.npmjs.org/
+50 silly mapToRegistry data Result {
+50 silly mapToRegistry   raw: 'gulp',
+50 silly mapToRegistry   scope: null,
+50 silly mapToRegistry   escapedName: 'gulp',
+50 silly mapToRegistry   name: 'gulp',
+50 silly mapToRegistry   rawSpec: '',
+50 silly mapToRegistry   spec: 'latest',
+50 silly mapToRegistry   type: 'tag' }
+51 silly mapToRegistry uri https://registry.npmjs.org/gulp
+52 verbose addNameTag registry:https://registry.npmjs.org/gulp not in flight; fetching
+53 verbose get https://registry.npmjs.org/gulp not expired, no request
+54 silly addNameTag next cb for gulp with tag latest
+55 silly addNamed gulp@3.9.1
+56 verbose addNamed "3.9.1" is a plain semver version for gulp
+57 silly cache afterAdd gulp@3.9.1
+58 verbose afterAdd /home/raounak/.npm/gulp/3.9.1/package/package.json not in flight; writing
+59 verbose correctMkdir /home/raounak/.npm correctMkdir not in flight; initializing
+60 verbose afterAdd /home/raounak/.npm/gulp/3.9.1/package/package.json written
+61 silly fetchNamedPackageData vinyl-fs
+62 silly mapToRegistry name vinyl-fs
+63 silly mapToRegistry using default registry
+64 silly mapToRegistry registry https://registry.npmjs.org/
+65 silly mapToRegistry data Result {
+65 silly mapToRegistry   raw: 'vinyl-fs',
+65 silly mapToRegistry   scope: null,
+65 silly mapToRegistry   escapedName: 'vinyl-fs',
+65 silly mapToRegistry   name: 'vinyl-fs',
+65 silly mapToRegistry   rawSpec: '',
+65 silly mapToRegistry   spec: 'latest',
+65 silly mapToRegistry   type: 'tag' }
+66 silly mapToRegistry uri https://registry.npmjs.org/vinyl-fs
+67 verbose request uri https://registry.npmjs.org/vinyl-fs
+68 verbose request no auth needed
+69 info attempt registry request try #1 at 6:42:06 AM
+70 verbose etag W/"58801dc0-138ce"
+71 verbose lastModified Thu, 19 Jan 2017 02:00:32 GMT
+72 http request GET https://registry.npmjs.org/vinyl-fs
+73 http 304 https://registry.npmjs.org/vinyl-fs
+74 verbose headers { date: 'Sat, 11 Feb 2017 01:14:58 GMT',
+74 verbose headers   via: '1.1 varnish',
+74 verbose headers   'cache-control': 'max-age=300',
+74 verbose headers   etag: 'W/"58801dc0-138ce"',
+74 verbose headers   age: '206',
+74 verbose headers   connection: 'keep-alive',
+74 verbose headers   'x-served-by': 'cache-cdg8729-CDG',
+74 verbose headers   'x-cache': 'HIT',
+74 verbose headers   'x-cache-hits': '1',
+74 verbose headers   'x-timer': 'S1486775698.940968,VS0,VE0',
+74 verbose headers   vary: 'Accept-Encoding' }
+75 silly get cb [ 304,
+75 silly get   { date: 'Sat, 11 Feb 2017 01:14:58 GMT',
+75 silly get     via: '1.1 varnish',
+75 silly get     'cache-control': 'max-age=300',
+75 silly get     etag: 'W/"58801dc0-138ce"',
+75 silly get     age: '206',
+75 silly get     connection: 'keep-alive',
+75 silly get     'x-served-by': 'cache-cdg8729-CDG',
+75 silly get     'x-cache': 'HIT',
+75 silly get     'x-cache-hits': '1',
+75 silly get     'x-timer': 'S1486775698.940968,VS0,VE0',
+75 silly get     vary: 'Accept-Encoding' } ]
+76 verbose etag https://registry.npmjs.org/vinyl-fs from cache
+77 verbose get saving vinyl-fs to /home/raounak/.npm/registry.npmjs.org/vinyl-fs/.cache.json
+78 verbose correctMkdir /home/raounak/.npm correctMkdir not in flight; initializing
+79 silly resolveWithNewModule vinyl-fs@0.3.14 checking installable status
+80 silly cache add args [ 'vinyl-fs@^0.3.0', null ]
+81 verbose cache add spec vinyl-fs@^0.3.0
+82 silly cache add parsed spec Result {
+82 silly cache add   raw: 'vinyl-fs@^0.3.0',
+82 silly cache add   scope: null,
+82 silly cache add   escapedName: 'vinyl-fs',
+82 silly cache add   name: 'vinyl-fs',
+82 silly cache add   rawSpec: '^0.3.0',
+82 silly cache add   spec: '>=0.3.0 <0.4.0',
+82 silly cache add   type: 'range' }
+83 silly addNamed vinyl-fs@>=0.3.0 <0.4.0
+84 verbose addNamed ">=0.3.0 <0.4.0" is a valid semver range for vinyl-fs
+85 silly addNameRange { name: 'vinyl-fs', range: '>=0.3.0 <0.4.0', hasData: false }
+86 silly mapToRegistry name vinyl-fs
+87 silly mapToRegistry using default registry
+88 silly mapToRegistry registry https://registry.npmjs.org/
+89 silly mapToRegistry data Result {
+89 silly mapToRegistry   raw: 'vinyl-fs',
+89 silly mapToRegistry   scope: null,
+89 silly mapToRegistry   escapedName: 'vinyl-fs',
+89 silly mapToRegistry   name: 'vinyl-fs',
+89 silly mapToRegistry   rawSpec: '',
+89 silly mapToRegistry   spec: 'latest',
+89 silly mapToRegistry   type: 'tag' }
+90 silly mapToRegistry uri https://registry.npmjs.org/vinyl-fs
+91 verbose addNameRange registry:https://registry.npmjs.org/vinyl-fs not in flight; fetching
+92 verbose get https://registry.npmjs.org/vinyl-fs not expired, no request
+93 silly addNameRange number 2 { name: 'vinyl-fs', range: '>=0.3.0 <0.4.0', hasData: true }
+94 silly addNameRange versions [ 'vinyl-fs',
+94 silly addNameRange   [ '0.0.1',
+94 silly addNameRange     '0.0.2',
+94 silly addNameRange     '0.1.0',
+94 silly addNameRange     '0.1.1',
+94 silly addNameRange     '0.1.2',
+94 silly addNameRange     '0.1.3',
+94 silly addNameRange     '0.1.4',
+94 silly addNameRange     '0.2.0',
+94 silly addNameRange     '0.2.1',
+94 silly addNameRange     '0.3.0',
+94 silly addNameRange     '0.3.1',
+94 silly addNameRange     '0.3.2',
+94 silly addNameRange     '0.3.3',
+94 silly addNameRange     '0.3.4',
+94 silly addNameRange     '0.3.5',
+94 silly addNameRange     '0.3.6',
+94 silly addNameRange     '0.3.7',
+94 silly addNameRange     '0.3.8',
+94 silly addNameRange     '0.3.9',
+94 silly addNameRange     '0.3.10',
+94 silly addNameRange     '0.3.11',
+94 silly addNameRange     '0.3.12',
+94 silly addNameRange     '0.3.13',
+94 silly addNameRange     '1.0.0',
+94 silly addNameRange     '0.3.14',
+94 silly addNameRange     '2.0.0',
+94 silly addNameRange     '2.1.0',
+94 silly addNameRange     '2.1.1',
+94 silly addNameRange     '2.2.0',
+94 silly addNameRange     '2.2.1',
+94 silly addNameRange     '2.3.0',
+94 silly addNameRange     '2.3.1',
+94 silly addNameRange     '2.3.2',
+94 silly addNameRange     '2.3.3',
+94 silly addNameRange     '2.3.4',
+94 silly addNameRange     '2.4.0',
+94 silly addNameRange     '2.4.1',
+94 silly addNameRange     '2.4.2',
+94 silly addNameRange     '2.4.3',
+94 silly addNameRange     '2.4.4' ] ]
+95 silly addNamed vinyl-fs@0.3.14
+96 verbose addNamed "0.3.14" is a plain semver version for vinyl-fs
+97 silly cache afterAdd vinyl-fs@0.3.14
+98 verbose afterAdd /home/raounak/.npm/vinyl-fs/0.3.14/package/package.json not in flight; writing
+99 verbose correctMkdir /home/raounak/.npm correctMkdir not in flight; initializing
+100 verbose afterAdd /home/raounak/.npm/vinyl-fs/0.3.14/package/package.json written
+101 silly fetchNamedPackageData mkdirp
+102 silly mapToRegistry name mkdirp
+103 silly mapToRegistry using default registry
+104 silly mapToRegistry registry https://registry.npmjs.org/
+105 silly mapToRegistry data Result {
+105 silly mapToRegistry   raw: 'mkdirp',
+105 silly mapToRegistry   scope: null,
+105 silly mapToRegistry   escapedName: 'mkdirp',
+105 silly mapToRegistry   name: 'mkdirp',
+105 silly mapToRegistry   rawSpec: '',
+105 silly mapToRegistry   spec: 'latest',
+105 silly mapToRegistry   type: 'tag' }
+106 silly mapToRegistry uri https://registry.npmjs.org/mkdirp
+107 silly fetchNamedPackageData through2
+108 silly mapToRegistry name through2
+109 silly mapToRegistry using default registry
+110 silly mapToRegistry registry https://registry.npmjs.org/
+111 silly mapToRegistry data Result {
+111 silly mapToRegistry   raw: 'through2',
+111 silly mapToRegistry   scope: null,
+111 silly mapToRegistry   escapedName: 'through2',
+111 silly mapToRegistry   name: 'through2',
+111 silly mapToRegistry   rawSpec: '',
+111 silly mapToRegistry   spec: 'latest',
+111 silly mapToRegistry   type: 'tag' }
+112 silly mapToRegistry uri https://registry.npmjs.org/through2
+113 silly fetchNamedPackageData vinyl
+114 silly mapToRegistry name vinyl
+115 silly mapToRegistry using default registry
+116 silly mapToRegistry registry https://registry.npmjs.org/
+117 silly mapToRegistry data Result {
+117 silly mapToRegistry   raw: 'vinyl',
+117 silly mapToRegistry   scope: null,
+117 silly mapToRegistry   escapedName: 'vinyl',
+117 silly mapToRegistry   name: 'vinyl',
+117 silly mapToRegistry   rawSpec: '',
+117 silly mapToRegistry   spec: 'latest',
+117 silly mapToRegistry   type: 'tag' }
+118 silly mapToRegistry uri https://registry.npmjs.org/vinyl
+119 verbose request uri https://registry.npmjs.org/mkdirp
+120 verbose request no auth needed
+121 info attempt registry request try #1 at 6:42:08 AM
+122 verbose etag W/"589c2a9a-61ac"
+123 verbose lastModified Thu, 09 Feb 2017 08:38:50 GMT
+124 http request GET https://registry.npmjs.org/mkdirp
+125 verbose request uri https://registry.npmjs.org/through2
+126 verbose request no auth needed
+127 info attempt registry request try #1 at 6:42:08 AM
+128 verbose etag W/"58893721-a8c2"
+129 verbose lastModified Wed, 25 Jan 2017 23:39:13 GMT
+130 http request GET https://registry.npmjs.org/through2
+131 verbose request uri https://registry.npmjs.org/vinyl
+132 verbose request no auth needed
+133 info attempt registry request try #1 at 6:42:08 AM
+134 verbose etag W/"585fdf52-c7be"
+135 verbose lastModified Sun, 25 Dec 2016 15:01:38 GMT
+136 http request GET https://registry.npmjs.org/vinyl
+137 http 304 https://registry.npmjs.org/mkdirp
+138 verbose headers { date: 'Sat, 11 Feb 2017 01:15:00 GMT',
+138 verbose headers   via: '1.1 varnish',
+138 verbose headers   'cache-control': 'max-age=300',
+138 verbose headers   etag: 'W/"589c2a9a-61ac"',
+138 verbose headers   age: '136',
+138 verbose headers   connection: 'keep-alive',
+138 verbose headers   'x-served-by': 'cache-cdg8729-CDG',
+138 verbose headers   'x-cache': 'HIT',
+138 verbose headers   'x-cache-hits': '1',
+138 verbose headers   'x-timer': 'S1486775700.330992,VS0,VE0',
+138 verbose headers   vary: 'Accept-Encoding' }
+139 silly get cb [ 304,
+139 silly get   { date: 'Sat, 11 Feb 2017 01:15:00 GMT',
+139 silly get     via: '1.1 varnish',
+139 silly get     'cache-control': 'max-age=300',
+139 silly get     etag: 'W/"589c2a9a-61ac"',
+139 silly get     age: '136',
+139 silly get     connection: 'keep-alive',
+139 silly get     'x-served-by': 'cache-cdg8729-CDG',
+139 silly get     'x-cache': 'HIT',
+139 silly get     'x-cache-hits': '1',
+139 silly get     'x-timer': 'S1486775700.330992,VS0,VE0',
+139 silly get     vary: 'Accept-Encoding' } ]
+140 verbose etag https://registry.npmjs.org/mkdirp from cache
+141 verbose get saving mkdirp to /home/raounak/.npm/registry.npmjs.org/mkdirp/.cache.json
+142 verbose correctMkdir /home/raounak/.npm correctMkdir not in flight; initializing
+143 silly resolveWithNewModule mkdirp@0.5.1 checking installable status
+144 silly cache add args [ 'mkdirp@^0.5.0', null ]
+145 verbose cache add spec mkdirp@^0.5.0
+146 silly cache add parsed spec Result {
+146 silly cache add   raw: 'mkdirp@^0.5.0',
+146 silly cache add   scope: null,
+146 silly cache add   escapedName: 'mkdirp',
+146 silly cache add   name: 'mkdirp',
+146 silly cache add   rawSpec: '^0.5.0',
+146 silly cache add   spec: '>=0.5.0 <0.6.0',
+146 silly cache add   type: 'range' }
+147 silly addNamed mkdirp@>=0.5.0 <0.6.0
+148 verbose addNamed ">=0.5.0 <0.6.0" is a valid semver range for mkdirp
+149 silly addNameRange { name: 'mkdirp', range: '>=0.5.0 <0.6.0', hasData: false }
+150 silly mapToRegistry name mkdirp
+151 silly mapToRegistry using default registry
+152 silly mapToRegistry registry https://registry.npmjs.org/
+153 silly mapToRegistry data Result {
+153 silly mapToRegistry   raw: 'mkdirp',
+153 silly mapToRegistry   scope: null,
+153 silly mapToRegistry   escapedName: 'mkdirp',
+153 silly mapToRegistry   name: 'mkdirp',
+153 silly mapToRegistry   rawSpec: '',
+153 silly mapToRegistry   spec: 'latest',
+153 silly mapToRegistry   type: 'tag' }
+154 silly mapToRegistry uri https://registry.npmjs.org/mkdirp
+155 verbose addNameRange registry:https://registry.npmjs.org/mkdirp not in flight; fetching
+156 verbose get https://registry.npmjs.org/mkdirp not expired, no request
+157 silly addNameRange number 2 { name: 'mkdirp', range: '>=0.5.0 <0.6.0', hasData: true }
+158 silly addNameRange versions [ 'mkdirp',
+158 silly addNameRange   [ '0.0.1',
+158 silly addNameRange     '0.0.2',
+158 silly addNameRange     '0.0.3',
+158 silly addNameRange     '0.0.4',
+158 silly addNameRange     '0.0.5',
+158 silly addNameRange     '0.0.6',
+158 silly addNameRange     '0.0.7',
+158 silly addNameRange     '0.1.0',
+158 silly addNameRange     '0.2.0',
+158 silly addNameRange     '0.2.1',
+158 silly addNameRange     '0.2.2',
+158 silly addNameRange     '0.3.0',
+158 silly addNameRange     '0.3.1',
+158 silly addNameRange     '0.3.2',
+158 silly addNameRange     '0.3.3',
+158 silly addNameRange     '0.3.4',
+158 silly addNameRange     '0.3.5',
+158 silly addNameRange     '0.4.0',
+158 silly addNameRange     '0.4.1',
+158 silly addNameRange     '0.4.2',
+158 silly addNameRange     '0.5.0',
+158 silly addNameRange     '0.5.1' ] ]
+159 silly addNamed mkdirp@0.5.1
+160 verbose addNamed "0.5.1" is a plain semver version for mkdirp
+161 silly cache afterAdd mkdirp@0.5.1
+162 verbose afterAdd /home/raounak/.npm/mkdirp/0.5.1/package/package.json not in flight; writing
+163 verbose correctMkdir /home/raounak/.npm correctMkdir not in flight; initializing
+164 verbose afterAdd /home/raounak/.npm/mkdirp/0.5.1/package/package.json written
+165 http 304 https://registry.npmjs.org/vinyl
+166 verbose headers { date: 'Sat, 11 Feb 2017 01:15:01 GMT',
+166 verbose headers   via: '1.1 varnish',
+166 verbose headers   'cache-control': 'max-age=300',
+166 verbose headers   etag: 'W/"585fdf52-c7be"',
+166 verbose headers   age: '262',
+166 verbose headers   connection: 'keep-alive',
+166 verbose headers   'x-served-by': 'cache-cdg8734-CDG',
+166 verbose headers   'x-cache': 'HIT',
+166 verbose headers   'x-cache-hits': '2',
+166 verbose headers   'x-timer': 'S1486775701.007466,VS0,VE0',
+166 verbose headers   vary: 'Accept-Encoding' }
+167 silly get cb [ 304,
+167 silly get   { date: 'Sat, 11 Feb 2017 01:15:01 GMT',
+167 silly get     via: '1.1 varnish',
+167 silly get     'cache-control': 'max-age=300',
+167 silly get     etag: 'W/"585fdf52-c7be"',
+167 silly get     age: '262',
+167 silly get     connection: 'keep-alive',
+167 silly get     'x-served-by': 'cache-cdg8734-CDG',
+167 silly get     'x-cache': 'HIT',
+167 silly get     'x-cache-hits': '2',
+167 silly get     'x-timer': 'S1486775701.007466,VS0,VE0',
+167 silly get     vary: 'Accept-Encoding' } ]
+168 verbose etag https://registry.npmjs.org/vinyl from cache
+169 verbose get saving vinyl to /home/raounak/.npm/registry.npmjs.org/vinyl/.cache.json
+170 verbose correctMkdir /home/raounak/.npm correctMkdir not in flight; initializing
+171 silly resolveWithNewModule vinyl@0.4.6 checking installable status
+172 silly cache add args [ 'vinyl@^0.4.0', null ]
+173 verbose cache add spec vinyl@^0.4.0
+174 silly cache add parsed spec Result {
+174 silly cache add   raw: 'vinyl@^0.4.0',
+174 silly cache add   scope: null,
+174 silly cache add   escapedName: 'vinyl',
+174 silly cache add   name: 'vinyl',
+174 silly cache add   rawSpec: '^0.4.0',
+174 silly cache add   spec: '>=0.4.0 <0.5.0',
+174 silly cache add   type: 'range' }
+175 silly addNamed vinyl@>=0.4.0 <0.5.0
+176 verbose addNamed ">=0.4.0 <0.5.0" is a valid semver range for vinyl
+177 silly addNameRange { name: 'vinyl', range: '>=0.4.0 <0.5.0', hasData: false }
+178 silly mapToRegistry name vinyl
+179 silly mapToRegistry using default registry
+180 silly mapToRegistry registry https://registry.npmjs.org/
+181 silly mapToRegistry data Result {
+181 silly mapToRegistry   raw: 'vinyl',
+181 silly mapToRegistry   scope: null,
+181 silly mapToRegistry   escapedName: 'vinyl',
+181 silly mapToRegistry   name: 'vinyl',
+181 silly mapToRegistry   rawSpec: '',
+181 silly mapToRegistry   spec: 'latest',
+181 silly mapToRegistry   type: 'tag' }
+182 silly mapToRegistry uri https://registry.npmjs.org/vinyl
+183 verbose addNameRange registry:https://registry.npmjs.org/vinyl not in flight; fetching
+184 verbose get https://registry.npmjs.org/vinyl not expired, no request
+185 silly addNameRange number 2 { name: 'vinyl', range: '>=0.4.0 <0.5.0', hasData: true }
+186 silly addNameRange versions [ 'vinyl',
+186 silly addNameRange   [ '0.1.0',
+186 silly addNameRange     '0.2.0',
+186 silly addNameRange     '0.2.1',
+186 silly addNameRange     '0.2.2',
+186 silly addNameRange     '0.2.3',
+186 silly addNameRange     '0.3.0',
+186 silly addNameRange     '0.3.1',
+186 silly addNameRange     '0.3.2',
+186 silly addNameRange     '0.3.3',
+186 silly addNameRange     '0.4.0',
+186 silly addNameRange     '0.4.1',
+186 silly addNameRange     '0.4.2',
+186 silly addNameRange     '0.4.3',
+186 silly addNameRange     '0.4.4',
+186 silly addNameRange     '0.4.5',
+186 silly addNameRange     '0.4.6',
+186 silly addNameRange     '0.5.0',
+186 silly addNameRange     '0.5.1',
+186 silly addNameRange     '0.5.3',
+186 silly addNameRange     '1.0.0',
+186 silly addNameRange     '1.1.0',
+186 silly addNameRange     '1.1.1',
+186 silly addNameRange     '1.2.0',
+186 silly addNameRange     '2.0.0',
+186 silly addNameRange     '2.0.1' ] ]
+187 silly addNamed vinyl@0.4.6
+188 verbose addNamed "0.4.6" is a plain semver version for vinyl
+189 silly cache afterAdd vinyl@0.4.6
+190 verbose afterAdd /home/raounak/.npm/vinyl/0.4.6/package/package.json not in flight; writing
+191 verbose correctMkdir /home/raounak/.npm correctMkdir not in flight; initializing
+192 verbose afterAdd /home/raounak/.npm/vinyl/0.4.6/package/package.json written
+193 http 304 https://registry.npmjs.org/through2
+194 verbose headers { date: 'Sat, 11 Feb 2017 01:15:08 GMT',
+194 verbose headers   via: '1.1 varnish',
+194 verbose headers   'cache-control': 'max-age=300',
+194 verbose headers   etag: 'W/"58893721-a8c2"',
+194 verbose headers   age: '76',
+194 verbose headers   connection: 'keep-alive',
+194 verbose headers   'x-served-by': 'cache-cdg8730-CDG',
+194 verbose headers   'x-cache': 'HIT',
+194 verbose headers   'x-cache-hits': '1',
+194 verbose headers   'x-timer': 'S1486775708.679157,VS0,VE0',
+194 verbose headers   vary: 'Accept-Encoding' }
+195 silly get cb [ 304,
+195 silly get   { date: 'Sat, 11 Feb 2017 01:15:08 GMT',
+195 silly get     via: '1.1 varnish',
+195 silly get     'cache-control': 'max-age=300',
+195 silly get     etag: 'W/"58893721-a8c2"',
+195 silly get     age: '76',
+195 silly get     connection: 'keep-alive',
+195 silly get     'x-served-by': 'cache-cdg8730-CDG',
+195 silly get     'x-cache': 'HIT',
+195 silly get     'x-cache-hits': '1',
+195 silly get     'x-timer': 'S1486775708.679157,VS0,VE0',
+195 silly get     vary: 'Accept-Encoding' } ]
+196 verbose etag https://registry.npmjs.org/through2 from cache
+197 verbose get saving through2 to /home/raounak/.npm/registry.npmjs.org/through2/.cache.json
+198 verbose correctMkdir /home/raounak/.npm correctMkdir not in flight; initializing
+199 silly resolveWithNewModule through2@0.6.5 checking installable status
+200 silly cache add args [ 'through2@^0.6.1', null ]
+201 verbose cache add spec through2@^0.6.1
+202 silly cache add parsed spec Result {
+202 silly cache add   raw: 'through2@^0.6.1',
+202 silly cache add   scope: null,
+202 silly cache add   escapedName: 'through2',
+202 silly cache add   name: 'through2',
+202 silly cache add   rawSpec: '^0.6.1',
+202 silly cache add   spec: '>=0.6.1 <0.7.0',
+202 silly cache add   type: 'range' }
+203 silly addNamed through2@>=0.6.1 <0.7.0
+204 verbose addNamed ">=0.6.1 <0.7.0" is a valid semver range for through2
+205 silly addNameRange { name: 'through2', range: '>=0.6.1 <0.7.0', hasData: false }
+206 silly mapToRegistry name through2
+207 silly mapToRegistry using default registry
+208 silly mapToRegistry registry https://registry.npmjs.org/
+209 silly mapToRegistry data Result {
+209 silly mapToRegistry   raw: 'through2',
+209 silly mapToRegistry   scope: null,
+209 silly mapToRegistry   escapedName: 'through2',
+209 silly mapToRegistry   name: 'through2',
+209 silly mapToRegistry   rawSpec: '',
+209 silly mapToRegistry   spec: 'latest',
+209 silly mapToRegistry   type: 'tag' }
+210 silly mapToRegistry uri https://registry.npmjs.org/through2
+211 verbose addNameRange registry:https://registry.npmjs.org/through2 not in flight; fetching
+212 verbose get https://registry.npmjs.org/through2 not expired, no request
+213 silly addNameRange number 2 { name: 'through2', range: '>=0.6.1 <0.7.0', hasData: true }
+214 silly addNameRange versions [ 'through2',
+214 silly addNameRange   [ '0.0.0',
+214 silly addNameRange     '0.0.1',
+214 silly addNameRange     '0.0.2',
+214 silly addNameRange     '0.0.3',
+214 silly addNameRange     '0.0.4',
+214 silly addNameRange     '0.0.5',
+214 silly addNameRange     '0.1.0',
+214 silly addNameRange     '0.2.0',
+214 silly addNameRange     '0.2.1',
+214 silly addNameRange     '0.2.2',
+214 silly addNameRange     '0.2.3',
+214 silly addNameRange     '0.3.0',
+214 silly addNameRange     '0.4.0',
+214 silly addNameRange     '0.4.1',
+214 silly addNameRange     '1.0.0',
+214 silly addNameRange     '0.4.2',
+214 silly addNameRange     '0.5.0',
+214 silly addNameRange     '0.5.1',
+214 silly addNameRange     '0.6.0',
+214 silly addNameRange     '1.1.0',
+214 silly addNameRange     '0.6.1',
+214 silly addNameRange     '1.1.1',
+214 silly addNameRange     '0.6.2',
+214 silly addNameRange     '0.6.3',
+214 silly addNameRange     '0.6.4',
+214 silly addNameRange     '0.6.5',
+214 silly addNameRange     '2.0.0',
+214 silly addNameRange     '2.0.1',
+214 silly addNameRange     '2.0.2',
+214 silly addNameRange     '2.0.3' ] ]
+215 silly addNamed through2@0.6.5
+216 verbose addNamed "0.6.5" is a plain semver version for through2
+217 silly cache afterAdd through2@0.6.5
+218 verbose afterAdd /home/raounak/.npm/through2/0.6.5/package/package.json not in flight; writing
+219 verbose correctMkdir /home/raounak/.npm correctMkdir not in flight; initializing
+220 verbose afterAdd /home/raounak/.npm/through2/0.6.5/package/package.json written
+221 silly fetchNamedPackageData minimist
+222 silly mapToRegistry name minimist
+223 silly mapToRegistry using default registry
+224 silly mapToRegistry registry https://registry.npmjs.org/
+225 silly mapToRegistry data Result {
+225 silly mapToRegistry   raw: 'minimist',
+225 silly mapToRegistry   scope: null,
+225 silly mapToRegistry   escapedName: 'minimist',
+225 silly mapToRegistry   name: 'minimist',
+225 silly mapToRegistry   rawSpec: '',
+225 silly mapToRegistry   spec: 'latest',
+225 silly mapToRegistry   type: 'tag' }
+226 silly mapToRegistry uri https://registry.npmjs.org/minimist
+227 verbose request uri https://registry.npmjs.org/minimist
+228 verbose request no auth needed
+229 info attempt registry request try #1 at 6:42:16 AM
+230 verbose etag W/"589dd2f9-738e"
+231 verbose lastModified Fri, 10 Feb 2017 14:49:29 GMT
+232 http request GET https://registry.npmjs.org/minimist
+233 http 304 https://registry.npmjs.org/minimist
+234 verbose headers { date: 'Sat, 11 Feb 2017 01:15:08 GMT',
+234 verbose headers   via: '1.1 varnish',
+234 verbose headers   'cache-control': 'max-age=300',
+234 verbose headers   etag: 'W/"589dd2f9-738e"',
+234 verbose headers   age: '195',
+234 verbose headers   connection: 'keep-alive',
+234 verbose headers   'x-served-by': 'cache-cdg8729-CDG',
+234 verbose headers   'x-cache': 'HIT',
+234 verbose headers   'x-cache-hits': '3',
+234 verbose headers   'x-timer': 'S1486775708.951020,VS0,VE0',
+234 verbose headers   vary: 'Accept-Encoding' }
+235 silly get cb [ 304,
+235 silly get   { date: 'Sat, 11 Feb 2017 01:15:08 GMT',
+235 silly get     via: '1.1 varnish',
+235 silly get     'cache-control': 'max-age=300',
+235 silly get     etag: 'W/"589dd2f9-738e"',
+235 silly get     age: '195',
+235 silly get     connection: 'keep-alive',
+235 silly get     'x-served-by': 'cache-cdg8729-CDG',
+235 silly get     'x-cache': 'HIT',
+235 silly get     'x-cache-hits': '3',
+235 silly get     'x-timer': 'S1486775708.951020,VS0,VE0',
+235 silly get     vary: 'Accept-Encoding' } ]
+236 verbose etag https://registry.npmjs.org/minimist from cache
+237 verbose get saving minimist to /home/raounak/.npm/registry.npmjs.org/minimist/.cache.json
+238 verbose correctMkdir /home/raounak/.npm correctMkdir not in flight; initializing
+239 silly resolveWithNewModule minimist@0.0.8 checking installable status
+240 silly cache add args [ 'minimist@0.0.8', null ]
+241 verbose cache add spec minimist@0.0.8
+242 silly cache add parsed spec Result {
+242 silly cache add   raw: 'minimist@0.0.8',
+242 silly cache add   scope: null,
+242 silly cache add   escapedName: 'minimist',
+242 silly cache add   name: 'minimist',
+242 silly cache add   rawSpec: '0.0.8',
+242 silly cache add   spec: '0.0.8',
+242 silly cache add   type: 'version' }
+243 silly addNamed minimist@0.0.8
+244 verbose addNamed "0.0.8" is a plain semver version for minimist
+245 silly mapToRegistry name minimist
+246 silly mapToRegistry using default registry
+247 silly mapToRegistry registry https://registry.npmjs.org/
+248 silly mapToRegistry data Result {
+248 silly mapToRegistry   raw: 'minimist',
+248 silly mapToRegistry   scope: null,
+248 silly mapToRegistry   escapedName: 'minimist',
+248 silly mapToRegistry   name: 'minimist',
+248 silly mapToRegistry   rawSpec: '',
+248 silly mapToRegistry   spec: 'latest',
+248 silly mapToRegistry   type: 'tag' }
+249 silly mapToRegistry uri https://registry.npmjs.org/minimist
+250 verbose addNameVersion registry:https://registry.npmjs.org/minimist not in flight; fetching
+251 verbose get https://registry.npmjs.org/minimist not expired, no request
+252 silly cache afterAdd minimist@0.0.8
+253 verbose afterAdd /home/raounak/.npm/minimist/0.0.8/package/package.json not in flight; writing
+254 verbose correctMkdir /home/raounak/.npm correctMkdir not in flight; initializing
+255 verbose afterAdd /home/raounak/.npm/minimist/0.0.8/package/package.json written
+256 silly fetchNamedPackageData readable-stream
+257 silly mapToRegistry name readable-stream
+258 silly mapToRegistry using default registry
+259 silly mapToRegistry registry https://registry.npmjs.org/
+260 silly mapToRegistry data Result {
+260 silly mapToRegistry   raw: 'readable-stream',
+260 silly mapToRegistry   scope: null,
+260 silly mapToRegistry   escapedName: 'readable-stream',
+260 silly mapToRegistry   name: 'readable-stream',
+260 silly mapToRegistry   rawSpec: '',
+260 silly mapToRegistry   spec: 'latest',
+260 silly mapToRegistry   type: 'tag' }
+261 silly mapToRegistry uri https://registry.npmjs.org/readable-stream
+262 verbose request uri https://registry.npmjs.org/readable-stream
+263 verbose request no auth needed
+264 info attempt registry request try #1 at 6:42:19 AM
+265 verbose etag W/"5884e6cd-123c3"
+266 verbose lastModified Sun, 22 Jan 2017 17:07:25 GMT
+267 http request GET https://registry.npmjs.org/readable-stream
+268 http 304 https://registry.npmjs.org/readable-stream
+269 verbose headers { date: 'Sat, 11 Feb 2017 01:15:11 GMT',
+269 verbose headers   via: '1.1 varnish',
+269 verbose headers   'cache-control': 'max-age=300',
+269 verbose headers   etag: 'W/"5884e6cd-123c3"',
+269 verbose headers   age: '153',
+269 verbose headers   connection: 'keep-alive',
+269 verbose headers   'x-served-by': 'cache-cdg8734-CDG',
+269 verbose headers   'x-cache': 'HIT',
+269 verbose headers   'x-cache-hits': '7',
+269 verbose headers   'x-timer': 'S1486775711.447365,VS0,VE0',
+269 verbose headers   vary: 'Accept-Encoding' }
+270 silly get cb [ 304,
+270 silly get   { date: 'Sat, 11 Feb 2017 01:15:11 GMT',
+270 silly get     via: '1.1 varnish',
+270 silly get     'cache-control': 'max-age=300',
+270 silly get     etag: 'W/"5884e6cd-123c3"',
+270 silly get     age: '153',
+270 silly get     connection: 'keep-alive',
+270 silly get     'x-served-by': 'cache-cdg8734-CDG',
+270 silly get     'x-cache': 'HIT',
+270 silly get     'x-cache-hits': '7',
+270 silly get     'x-timer': 'S1486775711.447365,VS0,VE0',
+270 silly get     vary: 'Accept-Encoding' } ]
+271 verbose etag https://registry.npmjs.org/readable-stream from cache
+272 verbose get saving readable-stream to /home/raounak/.npm/registry.npmjs.org/readable-stream/.cache.json
+273 verbose correctMkdir /home/raounak/.npm correctMkdir not in flight; initializing
+274 silly resolveWithNewModule readable-stream@1.0.34 checking installable status
+275 silly cache add args [ 'readable-stream@>=1.0.33-1 <1.1.0-0', null ]
+276 verbose cache add spec readable-stream@>=1.0.33-1 <1.1.0-0
+277 silly cache add parsed spec Result {
+277 silly cache add   raw: 'readable-stream@>=1.0.33-1 <1.1.0-0',
+277 silly cache add   scope: null,
+277 silly cache add   escapedName: 'readable-stream',
+277 silly cache add   name: 'readable-stream',
+277 silly cache add   rawSpec: '>=1.0.33-1 <1.1.0-0',
+277 silly cache add   spec: '>=1.0.33-1 <1.1.0-0',
+277 silly cache add   type: 'range' }
+278 silly addNamed readable-stream@>=1.0.33-1 <1.1.0-0
+279 verbose addNamed ">=1.0.33-1 <1.1.0-0" is a valid semver range for readable-stream
+280 silly addNameRange { name: 'readable-stream',
+280 silly addNameRange   range: '>=1.0.33-1 <1.1.0-0',
+280 silly addNameRange   hasData: false }
+281 silly mapToRegistry name readable-stream
+282 silly mapToRegistry using default registry
+283 silly mapToRegistry registry https://registry.npmjs.org/
+284 silly mapToRegistry data Result {
+284 silly mapToRegistry   raw: 'readable-stream',
+284 silly mapToRegistry   scope: null,
+284 silly mapToRegistry   escapedName: 'readable-stream',
+284 silly mapToRegistry   name: 'readable-stream',
+284 silly mapToRegistry   rawSpec: '',
+284 silly mapToRegistry   spec: 'latest',
+284 silly mapToRegistry   type: 'tag' }
+285 silly mapToRegistry uri https://registry.npmjs.org/readable-stream
+286 verbose addNameRange registry:https://registry.npmjs.org/readable-stream not in flight; fetching
+287 verbose get https://registry.npmjs.org/readable-stream not expired, no request
+288 silly addNameRange number 2 { name: 'readable-stream',
+288 silly addNameRange   range: '>=1.0.33-1 <1.1.0-0',
+288 silly addNameRange   hasData: true }
+289 silly addNameRange versions [ 'readable-stream',
+289 silly addNameRange   [ '0.0.1',
+289 silly addNameRange     '0.0.2',
+289 silly addNameRange     '0.0.3',
+289 silly addNameRange     '0.0.4',
+289 silly addNameRange     '0.1.0',
+289 silly addNameRange     '0.2.0',
+289 silly addNameRange     '0.3.0',
+289 silly addNameRange     '0.3.1',
+289 silly addNameRange     '1.0.0',
+289 silly addNameRange     '1.0.1',
+289 silly addNameRange     '1.0.2',
+289 silly addNameRange     '1.0.15',
+289 silly addNameRange     '1.0.17',
+289 silly addNameRange     '1.1.7',
+289 silly addNameRange     '1.1.8',
+289 silly addNameRange     '1.1.9',
+289 silly addNameRange     '1.0.24',
+289 silly addNameRange     '1.0.25',
+289 silly addNameRange     '1.1.10',
+289 silly addNameRange     '1.0.25-1',
+289 silly addNameRange     '1.1.11',
+289 silly addNameRange     '1.0.26',
+289 silly addNameRange     '1.0.26-1',
+289 silly addNameRange     '1.1.11-1',
+289 silly addNameRange     '1.0.26-2',
+289 silly addNameRange     '1.1.12',
+289 silly addNameRange     '1.0.26-3',
+289 silly addNameRange     '1.0.26-4',
+289 silly addNameRange     '1.1.12-1',
+289 silly addNameRange     '1.0.27-1',
+289 silly addNameRange     '1.1.13-1',
+289 silly addNameRange     '1.0.31',
+289 silly addNameRange     '1.1.13',
+289 silly addNameRange     '1.0.32',
+289 silly addNameRange     '1.0.32-1',
+289 silly addNameRange     '1.0.33-1',
+289 silly addNameRange     '1.0.33-2',
+289 silly addNameRange     '1.0.33',
+289 silly addNameRange     '2.0.0',
+289 silly addNameRange     '2.0.1',
+289 silly addNameRange     '2.0.2',
+289 silly addNameRange     '2.0.3',
+289 silly addNameRange     '2.0.4',
+289 silly addNameRange     '2.0.5',
+289 silly addNameRange     '2.0.6',
+289 silly addNameRange     '1.0.34',
+289 silly addNameRange     '1.1.14',
+289 silly addNameRange     '2.1.0',
+289 silly addNameRange     '2.1.1',
+289 silly addNameRange     '2.1.2',
+289 silly addNameRange     '2.1.3',
+289 silly addNameRange     '2.1.4',
+289 silly addNameRange     '2.1.5',
+289 silly addNameRange     '2.2.0',
+289 silly addNameRange     '2.2.1',
+289 silly addNameRange     '2.2.2' ] ]
+290 silly addNamed readable-stream@1.0.34
+291 verbose addNamed "1.0.34" is a plain semver version for readable-stream
+292 silly cache afterAdd readable-stream@1.0.34
+293 verbose afterAdd /home/raounak/.npm/readable-stream/1.0.34/package/package.json not in flight; writing
+294 verbose correctMkdir /home/raounak/.npm correctMkdir not in flight; initializing
+295 verbose afterAdd /home/raounak/.npm/readable-stream/1.0.34/package/package.json written
+296 silly fetchNamedPackageData clone
+297 silly mapToRegistry name clone
+298 silly mapToRegistry using default registry
+299 silly mapToRegistry registry https://registry.npmjs.org/
+300 silly mapToRegistry data Result {
+300 silly mapToRegistry   raw: 'clone',
+300 silly mapToRegistry   scope: null,
+300 silly mapToRegistry   escapedName: 'clone',
+300 silly mapToRegistry   name: 'clone',
+300 silly mapToRegistry   rawSpec: '',
+300 silly mapToRegistry   spec: 'latest',
+300 silly mapToRegistry   type: 'tag' }
+301 silly mapToRegistry uri https://registry.npmjs.org/clone
+302 verbose request uri https://registry.npmjs.org/clone
+303 verbose request no auth needed
+304 info attempt registry request try #1 at 6:42:19 AM
+305 verbose etag W/"58933da4-f3c6"
+306 verbose lastModified Thu, 02 Feb 2017 14:09:40 GMT
+307 http request GET https://registry.npmjs.org/clone
+308 http 304 https://registry.npmjs.org/clone
+309 verbose headers { date: 'Sat, 11 Feb 2017 01:15:12 GMT',
+309 verbose headers   via: '1.1 varnish',
+309 verbose headers   'cache-control': 'max-age=300',
+309 verbose headers   etag: 'W/"58933da4-f3c6"',
+309 verbose headers   age: '271',
+309 verbose headers   connection: 'keep-alive',
+309 verbose headers   'x-served-by': 'cache-cdg8730-CDG',
+309 verbose headers   'x-cache': 'HIT',
+309 verbose headers   'x-cache-hits': '2',
+309 verbose headers   'x-timer': 'S1486775712.318506,VS0,VE0',
+309 verbose headers   vary: 'Accept-Encoding' }
+310 silly get cb [ 304,
+310 silly get   { date: 'Sat, 11 Feb 2017 01:15:12 GMT',
+310 silly get     via: '1.1 varnish',
+310 silly get     'cache-control': 'max-age=300',
+310 silly get     etag: 'W/"58933da4-f3c6"',
+310 silly get     age: '271',
+310 silly get     connection: 'keep-alive',
+310 silly get     'x-served-by': 'cache-cdg8730-CDG',
+310 silly get     'x-cache': 'HIT',
+310 silly get     'x-cache-hits': '2',
+310 silly get     'x-timer': 'S1486775712.318506,VS0,VE0',
+310 silly get     vary: 'Accept-Encoding' } ]
+311 verbose etag https://registry.npmjs.org/clone from cache
+312 verbose get saving clone to /home/raounak/.npm/registry.npmjs.org/clone/.cache.json
+313 verbose correctMkdir /home/raounak/.npm correctMkdir not in flight; initializing
+314 silly resolveWithNewModule clone@0.2.0 checking installable status
+315 silly cache add args [ 'clone@^0.2.0', null ]
+316 verbose cache add spec clone@^0.2.0
+317 silly cache add parsed spec Result {
+317 silly cache add   raw: 'clone@^0.2.0',
+317 silly cache add   scope: null,
+317 silly cache add   escapedName: 'clone',
+317 silly cache add   name: 'clone',
+317 silly cache add   rawSpec: '^0.2.0',
+317 silly cache add   spec: '>=0.2.0 <0.3.0',
+317 silly cache add   type: 'range' }
+318 silly addNamed clone@>=0.2.0 <0.3.0
+319 verbose addNamed ">=0.2.0 <0.3.0" is a valid semver range for clone
+320 silly addNameRange { name: 'clone', range: '>=0.2.0 <0.3.0', hasData: false }
+321 silly mapToRegistry name clone
+322 silly mapToRegistry using default registry
+323 silly mapToRegistry registry https://registry.npmjs.org/
+324 silly mapToRegistry data Result {
+324 silly mapToRegistry   raw: 'clone',
+324 silly mapToRegistry   scope: null,
+324 silly mapToRegistry   escapedName: 'clone',
+324 silly mapToRegistry   name: 'clone',
+324 silly mapToRegistry   rawSpec: '',
+324 silly mapToRegistry   spec: 'latest',
+324 silly mapToRegistry   type: 'tag' }
+325 silly mapToRegistry uri https://registry.npmjs.org/clone
+326 verbose addNameRange registry:https://registry.npmjs.org/clone not in flight; fetching
+327 verbose get https://registry.npmjs.org/clone not expired, no request
+328 silly addNameRange number 2 { name: 'clone', range: '>=0.2.0 <0.3.0', hasData: true }
+329 silly addNameRange versions [ 'clone',
+329 silly addNameRange   [ '0.0.0',
+329 silly addNameRange     '0.0.1',
+329 silly addNameRange     '0.0.2',
+329 silly addNameRange     '0.0.3',
+329 silly addNameRange     '0.0.4',
+329 silly addNameRange     '0.0.5',
+329 silly addNameRange     '0.0.6',
+329 silly addNameRange     '0.0.7',
+329 silly addNameRange     '0.1.0',
+329 silly addNameRange     '0.1.1',
+329 silly addNameRange     '0.1.2',
+329 silly addNameRange     '0.1.3',
+329 silly addNameRange     '0.1.4',
+329 silly addNameRange     '0.1.5',
+329 silly addNameRange     '0.1.6',
+329 silly addNameRange     '0.1.7',
+329 silly addNameRange     '0.1.8',
+329 silly addNameRange     '0.1.9',
+329 silly addNameRange     '0.1.10',
+329 silly addNameRange     '0.1.11',
+329 silly addNameRange     '0.1.12',
+329 silly addNameRange     '0.1.13',
+329 silly addNameRange     '0.1.14',
+329 silly addNameRange     '0.1.15',
+329 silly addNameRange     '0.1.16',
+329 silly addNameRange     '0.1.17',
+329 silly addNameRange     '0.1.18',
+329 silly addNameRange     '0.2.0',
+329 silly addNameRange     '0.1.19',
+329 silly addNameRange     '1.0.0',
+329 silly addNameRange     '1.0.1',
+329 silly addNameRange     '1.0.2',
+329 silly addNameRange     '2.0.0',
+329 silly addNameRange     '2.1.0' ] ]
+330 silly addNamed clone@0.2.0
+331 verbose addNamed "0.2.0" is a plain semver version for clone
+332 silly cache afterAdd clone@0.2.0
+333 verbose afterAdd /home/raounak/.npm/clone/0.2.0/package/package.json not in flight; writing
+334 verbose correctMkdir /home/raounak/.npm correctMkdir not in flight; initializing
+335 verbose afterAdd /home/raounak/.npm/clone/0.2.0/package/package.json written
+336 silly loadAllDepsIntoIdealTree Finishing
+337 silly loadIdealTree Finishing
+338 silly currentTree raounak
+338 silly currentTree +-- ansi-regex@2.1.1
+338 silly currentTree +-- ansi-styles@2.2.1
+338 silly currentTree +-- archy@1.0.0
+338 silly currentTree +-- arr-diff@2.0.0
+338 silly currentTree +-- arr-flatten@1.0.1
+338 silly currentTree +-- array-differ@1.0.0
+338 silly currentTree +-- array-uniq@1.0.3
+338 silly currentTree +-- array-unique@0.2.1
+338 silly currentTree +-- balanced-match@0.4.2
+338 silly currentTree +-- beeper@1.1.1
+338 silly currentTree +-- brace-expansion@1.1.6
+338 silly currentTree +-- braces@1.8.5
+338 silly currentTree +-- buffer-shims@1.0.0
+338 silly currentTree +-- chalk@1.1.3
+338 silly currentTree +-- clone-stats@0.0.1
+338 silly currentTree +-- clone@1.0.2
+338 silly currentTree +-- concat-map@0.0.1
+338 silly currentTree +-- core-util-is@1.0.2
+338 silly currentTree +-- dateformat@2.0.0
+338 silly currentTree +-- defaults@1.0.3
+338 silly currentTree +-- deprecated@0.0.1
+338 silly currentTree +-- detect-file@0.1.0
+338 silly currentTree +-- duplexer2@0.0.2
+338 silly currentTree +-- end-of-stream@0.1.5
+338 silly currentTree +-- escape-string-regexp@1.0.5
+338 silly currentTree +-- expand-brackets@0.1.5
+338 silly currentTree +-- expand-range@1.8.2
+338 silly currentTree +-- expand-tilde@1.2.2
+338 silly currentTree +-- extend@3.0.0
+338 silly currentTree +-- extglob@0.3.2
+338 silly currentTree +-- fancy-log@1.3.0
+338 silly currentTree +-- filename-regex@2.0.0
+338 silly currentTree +-- fill-range@2.2.3
+338 silly currentTree +-- find-index@0.1.1
+338 silly currentTree +-- findup-sync@0.4.3
+338 silly currentTree +-- fined@1.0.2
+338 silly currentTree +-- firebase@3.6.4
+338 silly currentTree | +-- base64-url@1.3.3
+338 silly currentTree | +-- base64url@2.0.0
+338 silly currentTree | +-- buffer-equal-constant-time@1.0.1
+338 silly currentTree | +-- dom-storage@2.0.2
+338 silly currentTree | +-- ecdsa-sig-formatter@1.0.7
+338 silly currentTree | +-- faye-websocket@0.9.3
+338 silly currentTree | +-- hoek@2.16.3
+338 silly currentTree | +-- isemail@1.2.0
+338 silly currentTree | +-- joi@6.10.1
+338 silly currentTree | +-- jsonwebtoken@7.1.9
+338 silly currentTree | +-- jwa@1.1.4
+338 silly currentTree | +-- jws@3.1.4
+338 silly currentTree | +-- lodash.once@4.1.1
+338 silly currentTree | +-- moment@2.16.0
+338 silly currentTree | +-- ms@0.7.2
+338 silly currentTree | +-- rsvp@3.2.1
+338 silly currentTree | +-- safe-buffer@5.0.1
+338 silly currentTree | +-- topo@1.1.0
+338 silly currentTree | +-- websocket-driver@0.6.5
+338 silly currentTree | +-- websocket-extensions@0.1.1
+338 silly currentTree | +-- xmlhttprequest@1.8.0
+338 silly currentTree | `-- xtend@4.0.1
+338 silly currentTree +-- first-chunk-stream@1.0.0
+338 silly currentTree +-- flagged-respawn@0.3.2
+338 silly currentTree +-- for-in@0.1.6
+338 silly currentTree +-- for-own@0.1.4
+338 silly currentTree +-- fs-exists-sync@0.1.0
+338 silly currentTree +-- gaze@0.5.2
+338 silly currentTree +-- glob-base@0.3.0
+338 silly currentTree +-- glob-parent@2.0.0
+338 silly currentTree +-- glob-stream@3.1.18
+338 silly currentTree | +-- readable-stream@1.0.34
+338 silly currentTree | `-- through2@0.6.5
+338 silly currentTree +-- glob-watcher@0.0.6
+338 silly currentTree +-- glob@4.5.3
+338 silly currentTree +-- glob2base@0.0.12
+338 silly currentTree +-- global-modules@0.2.3
+338 silly currentTree +-- global-prefix@0.1.5
+338 silly currentTree +-- globule@0.1.0
+338 silly currentTree | +-- glob@3.1.21
+338 silly currentTree | +-- graceful-fs@1.2.3
+338 silly currentTree | +-- inherits@1.0.2
+338 silly currentTree | `-- minimatch@0.2.14
+338 silly currentTree +-- glogg@1.0.0
+338 silly currentTree +-- graceful-fs@3.0.11
+338 silly currentTree +-- grunt-contrib-connect@1.0.2
+338 silly currentTree | +-- async@1.5.2
+338 silly currentTree | +-- connect-livereload@0.5.4
+338 silly currentTree | +-- connect@3.4.1
+338 silly currentTree | | +-- debug@2.2.0
+338 silly currentTree | | | `-- ms@0.7.1
+338 silly currentTree | | +-- finalhandler@0.4.1
+338 silly currentTree | | | +-- escape-html@1.0.3
+338 silly currentTree | | | +-- on-finished@2.3.0
+338 silly currentTree | | | | `-- ee-first@1.1.1
+338 silly currentTree | | | `-- unpipe@1.0.0
+338 silly currentTree | | +-- parseurl@1.3.1
+338 silly currentTree | | `-- utils-merge@1.0.0
+338 silly currentTree | +-- http2@3.3.4
+338 silly currentTree | +-- morgan@1.7.0
+338 silly currentTree | | +-- basic-auth@1.0.4
+338 silly currentTree | | +-- debug@2.2.0
+338 silly currentTree | | | `-- ms@0.7.1
+338 silly currentTree | | +-- depd@1.1.0
+338 silly currentTree | | +-- on-finished@2.3.0
+338 silly currentTree | | | `-- ee-first@1.1.1
+338 silly currentTree | | `-- on-headers@1.0.1
+338 silly currentTree | +-- opn@4.0.2
+338 silly currentTree | | +-- object-assign@4.1.0
+338 silly currentTree | | `-- pinkie-promise@2.0.1
+338 silly currentTree | |   `-- pinkie@2.0.4
+338 silly currentTree | +-- portscanner@1.0.0
+338 silly currentTree | | `-- async@0.1.15
+338 silly currentTree | +-- serve-index@1.8.0
+338 silly currentTree | | +-- accepts@1.3.3
+338 silly currentTree | | | `-- negotiator@0.6.1
+338 silly currentTree | | +-- batch@0.5.3
+338 silly currentTree | | +-- debug@2.2.0
+338 silly currentTree | | | `-- ms@0.7.1
+338 silly currentTree | | +-- escape-html@1.0.3
+338 silly currentTree | | +-- http-errors@1.5.0
+338 silly currentTree | | | +-- inherits@2.0.1
+338 silly currentTree | | | +-- setprototypeof@1.0.1
+338 silly currentTree | | | `-- statuses@1.3.0
+338 silly currentTree | | +-- mime-types@2.1.11
+338 silly currentTree | | | `-- mime-db@1.23.0
+338 silly currentTree | | `-- parseurl@1.3.1
+338 silly currentTree | `-- serve-static@1.11.1
+338 silly currentTree |   +-- encodeurl@1.0.1
+338 silly currentTree |   +-- escape-html@1.0.3
+338 silly currentTree |   +-- parseurl@1.3.1
+338 silly currentTree |   `-- send@0.14.1
+338 silly currentTree |     +-- debug@2.2.0
+338 silly currentTree |     +-- depd@1.1.0
+338 silly currentTree |     +-- destroy@1.0.4
+338 silly currentTree |     +-- etag@1.7.0
+338 silly currentTree |     +-- fresh@0.3.0
+338 silly currentTree |     +-- http-errors@1.5.0
+338 silly currentTree |     | +-- inherits@2.0.1
+338 silly currentTree |     | `-- setprototypeof@1.0.1
+338 silly currentTree |     +-- mime@1.3.4
+338 silly currentTree |     +-- ms@0.7.1
+338 silly currentTree |     +-- on-finished@2.3.0
+338 silly currentTree |     | `-- ee-first@1.1.1
+338 silly currentTree |     +-- range-parser@1.2.0
+338 silly currentTree |     `-- statuses@1.3.0
+338 silly currentTree +-- grunt-contrib-jshint@1.0.0
+338 silly currentTree | +-- chalk@1.1.3
+338 silly currentTree | | +-- ansi-styles@2.2.1
+338 silly currentTree | | +-- escape-string-regexp@1.0.5
+338 silly currentTree | | +-- has-ansi@2.0.0
+338 silly currentTree | | | `-- ansi-regex@2.0.0
+338 silly currentTree | | +-- strip-ansi@3.0.1
+338 silly currentTree | | | `-- ansi-regex@2.0.0
+338 silly currentTree | | `-- supports-color@2.0.0
+338 silly currentTree | +-- hooker@0.2.3
+338 silly currentTree | `-- jshint@2.9.3
+338 silly currentTree |   +-- cli@1.0.0
+338 silly currentTree |   | `-- glob@7.0.6
+338 silly currentTree |   |   +-- fs.realpath@1.0.0
+338 silly currentTree |   |   +-- inflight@1.0.5
+338 silly currentTree |   |   | `-- wrappy@1.0.2
+338 silly currentTree |   |   +-- inherits@2.0.1
+338 silly currentTree |   |   +-- once@1.3.3
+338 silly currentTree |   |   | `-- wrappy@1.0.2
+338 silly currentTree |   |   `-- path-is-absolute@1.0.0
+338 silly currentTree |   +-- console-browserify@1.1.0
+338 silly currentTree |   | `-- date-now@0.1.4
+338 silly currentTree |   +-- exit@0.1.2
+338 silly currentTree |   +-- htmlparser2@3.8.3
+338 silly currentTree |   | +-- domelementtype@1.3.0
+338 silly currentTree |   | +-- domhandler@2.3.0
+338 silly currentTree |   | +-- domutils@1.5.1
+338 silly currentTree |   | | `-- dom-serializer@0.1.0
+338 silly currentTree |   | |   +-- domelementtype@1.1.3
+338 silly currentTree |   | |   `-- entities@1.1.1
+338 silly currentTree |   | +-- entities@1.0.0
+338 silly currentTree |   | `-- readable-stream@1.1.14
+338 silly currentTree |   |   +-- core-util-is@1.0.2
+338 silly currentTree |   |   +-- inherits@2.0.1
+338 silly currentTree |   |   +-- isarray@0.0.1
+338 silly currentTree |   |   `-- string_decoder@0.10.31
+338 silly currentTree |   +-- lodash@3.7.0
+338 silly currentTree |   +-- minimatch@3.0.3
+338 silly currentTree |   | `-- brace-expansion@1.1.6
+338 silly currentTree |   |   +-- balanced-match@0.4.2
+338 silly currentTree |   |   `-- concat-map@0.0.1
+338 silly currentTree |   +-- shelljs@0.3.0
+338 silly currentTree |   `-- strip-json-comments@1.0.4
+338 silly currentTree +-- grunt-contrib-watch@1.0.0
+338 silly currentTree | +-- async@1.5.2
+338 silly currentTree | +-- gaze@1.1.1
+338 silly currentTree | | `-- globule@1.0.0
+338 silly currentTree | |   +-- glob@7.0.6
+338 silly currentTree | |   | +-- fs.realpath@1.0.0
+338 silly currentTree | |   | +-- inflight@1.0.5
+338 silly currentTree | |   | | `-- wrappy@1.0.2
+338 silly currentTree | |   | +-- inherits@2.0.1
+338 silly currentTree | |   | +-- once@1.3.3
+338 silly currentTree | |   | | `-- wrappy@1.0.2
+338 silly currentTree | |   | `-- path-is-absolute@1.0.0
+338 silly currentTree | |   +-- lodash@4.9.0
+338 silly currentTree | |   `-- minimatch@3.0.3
+338 silly currentTree | |     `-- brace-expansion@1.1.6
+338 silly currentTree | |       +-- balanced-match@0.4.2
+338 silly currentTree | |       `-- concat-map@0.0.1
+338 silly currentTree | +-- lodash@3.10.1
+338 silly currentTree | `-- tiny-lr@0.2.1
+338 silly currentTree |   +-- body-parser@1.14.2
+338 silly currentTree |   | +-- bytes@2.2.0
+338 silly currentTree |   | +-- content-type@1.0.2
+338 silly currentTree |   | +-- depd@1.1.0
+338 silly currentTree |   | +-- http-errors@1.3.1
+338 silly currentTree |   | | +-- inherits@2.0.1
+338 silly currentTree |   | | `-- statuses@1.3.0
+338 silly currentTree |   | +-- iconv-lite@0.4.13
+338 silly currentTree |   | +-- on-finished@2.3.0
+338 silly currentTree |   | | `-- ee-first@1.1.1
+338 silly currentTree |   | +-- qs@5.2.0
+338 silly currentTree |   | +-- raw-body@2.1.7
+338 silly currentTree |   | | +-- bytes@2.4.0
+338 silly currentTree |   | | `-- unpipe@1.0.0
+338 silly currentTree |   | `-- type-is@1.6.13
+338 silly currentTree |   |   +-- media-typer@0.3.0
+338 silly currentTree |   |   `-- mime-types@2.1.11
+338 silly currentTree |   |     `-- mime-db@1.23.0
+338 silly currentTree |   +-- debug@2.2.0
+338 silly currentTree |   | `-- ms@0.7.1
+338 silly currentTree |   +-- faye-websocket@0.10.0
+338 silly currentTree |   | `-- websocket-driver@0.6.5
+338 silly currentTree |   |   `-- websocket-extensions@0.1.1
+338 silly currentTree |   +-- livereload-js@2.2.2
+338 silly currentTree |   +-- parseurl@1.3.1
+338 silly currentTree |   `-- qs@5.1.0
+338 silly currentTree +-- grunt@1.0.1
+338 silly currentTree | +-- coffee-script@1.10.0
+338 silly currentTree | +-- dateformat@1.0.12
+338 silly currentTree | | +-- get-stdin@4.0.1
+338 silly currentTree | | `-- meow@3.7.0
+338 silly currentTree | |   +-- camelcase-keys@2.1.0
+338 silly currentTree | |   | `-- camelcase@2.1.1
+338 silly currentTree | |   +-- decamelize@1.2.0
+338 silly currentTree | |   +-- loud-rejection@1.6.0
+338 silly currentTree | |   | +-- currently-unhandled@0.4.1
+338 silly currentTree | |   | | `-- array-find-index@1.0.1
+338 silly currentTree | |   | `-- signal-exit@3.0.0
+338 silly currentTree | |   +-- map-obj@1.0.1
+338 silly currentTree | |   +-- minimist@1.2.0
+338 silly currentTree | |   +-- normalize-package-data@2.3.5
+338 silly currentTree | |   | +-- hosted-git-info@2.1.5
+338 silly currentTree | |   | +-- is-builtin-module@1.0.0
+338 silly currentTree | |   | | `-- builtin-modules@1.1.1
+338 silly currentTree | |   | +-- semver@5.3.0
+338 silly currentTree | |   | `-- validate-npm-package-license@3.0.1
+338 silly currentTree | |   |   +-- spdx-correct@1.0.2
+338 silly currentTree | |   |   | `-- spdx-license-ids@1.2.2
+338 silly currentTree | |   |   `-- spdx-expression-parse@1.0.3
+338 silly currentTree | |   +-- object-assign@4.1.0
+338 silly currentTree | |   +-- read-pkg-up@1.0.1
+338 silly currentTree | |   | +-- find-up@1.1.2
+338 silly currentTree | |   | | +-- path-exists@2.1.0
+338 silly currentTree | |   | | `-- pinkie-promise@2.0.1
+338 silly currentTree | |   | |   `-- pinkie@2.0.4
+338 silly currentTree | |   | `-- read-pkg@1.1.0
+338 silly currentTree | |   |   +-- load-json-file@1.1.0
+338 silly currentTree | |   |   | +-- graceful-fs@4.1.6
+338 silly currentTree | |   |   | +-- parse-json@2.2.0
+338 silly currentTree | |   |   | | `-- error-ex@1.3.0
+338 silly currentTree | |   |   | |   `-- is-arrayish@0.2.1
+338 silly currentTree | |   |   | +-- pify@2.3.0
+338 silly currentTree | |   |   | +-- pinkie-promise@2.0.1
+338 silly currentTree | |   |   | | `-- pinkie@2.0.4
+338 silly currentTree | |   |   | `-- strip-bom@2.0.0
+338 silly currentTree | |   |   |   `-- is-utf8@0.2.1
+338 silly currentTree | |   |   `-- path-type@1.1.0
+338 silly currentTree | |   |     +-- graceful-fs@4.1.6
+338 silly currentTree | |   |     +-- pify@2.3.0
+338 silly currentTree | |   |     `-- pinkie-promise@2.0.1
+338 silly currentTree | |   |       `-- pinkie@2.0.4
+338 silly currentTree | |   +-- redent@1.0.0
+338 silly currentTree | |   | +-- indent-string@2.1.0
+338 silly currentTree | |   | | `-- repeating@2.0.1
+338 silly currentTree | |   | |   `-- is-finite@1.0.1
+338 silly currentTree | |   | |     `-- number-is-nan@1.0.0
+338 silly currentTree | |   | `-- strip-indent@1.0.1
+338 silly currentTree | |   `-- trim-newlines@1.0.0
+338 silly currentTree | +-- eventemitter2@0.4.14
+338 silly currentTree | +-- exit@0.1.2
+338 silly currentTree | +-- findup-sync@0.3.0
+338 silly currentTree | | `-- glob@5.0.15
+338 silly currentTree | |   +-- inflight@1.0.5
+338 silly currentTree | |   | `-- wrappy@1.0.2
+338 silly currentTree | |   +-- inherits@2.0.1
+338 silly currentTree | |   `-- once@1.3.3
+338 silly currentTree | |     `-- wrappy@1.0.2
+338 silly currentTree | +-- glob@7.0.6
+338 silly currentTree | | +-- fs.realpath@1.0.0
+338 silly currentTree | | +-- inflight@1.0.5
+338 silly currentTree | | | `-- wrappy@1.0.2
+338 silly currentTree | | +-- inherits@2.0.1
+338 silly currentTree | | `-- once@1.3.3
+338 silly currentTree | |   `-- wrappy@1.0.2
+338 silly currentTree | +-- grunt-cli@1.2.0
+338 silly currentTree | | `-- resolve@1.1.7
+338 silly currentTree | +-- grunt-known-options@1.1.0
+338 silly currentTree | +-- grunt-legacy-log@1.0.0
+338 silly currentTree | | +-- colors@1.1.2
+338 silly currentTree | | +-- grunt-legacy-log-utils@1.0.0
+338 silly currentTree | | | +-- chalk@1.1.3
+338 silly currentTree | | | | +-- ansi-styles@2.2.1
+338 silly currentTree | | | | +-- escape-string-regexp@1.0.5
+338 silly currentTree | | | | +-- has-ansi@2.0.0
+338 silly currentTree | | | | | `-- ansi-regex@2.0.0
+338 silly currentTree | | | | +-- strip-ansi@3.0.1
+338 silly currentTree | | | | | `-- ansi-regex@2.0.0
+338 silly currentTree | | | | `-- supports-color@2.0.0
+338 silly currentTree | | | `-- lodash@4.3.0
+338 silly currentTree | | +-- hooker@0.2.3
+338 silly currentTree | | +-- lodash@3.10.1
+338 silly currentTree | | `-- underscore.string@3.2.3
+338 silly currentTree | +-- grunt-legacy-util@1.0.0
+338 silly currentTree | | +-- async@1.5.2
+338 silly currentTree | | +-- getobject@0.1.0
+338 silly currentTree | | +-- hooker@0.2.3
+338 silly currentTree | | +-- lodash@4.3.0
+338 silly currentTree | | +-- underscore.string@3.2.3
+338 silly currentTree | | `-- which@1.2.10
+338 silly currentTree | |   `-- isexe@1.1.2
+338 silly currentTree | +-- iconv-lite@0.4.13
+338 silly currentTree | +-- js-yaml@3.5.5
+338 silly currentTree | | +-- argparse@1.0.7
+338 silly currentTree | | | `-- sprintf-js@1.0.3
+338 silly currentTree | | `-- esprima@2.7.3
+338 silly currentTree | +-- minimatch@3.0.3
+338 silly currentTree | | `-- brace-expansion@1.1.6
+338 silly currentTree | |   +-- balanced-match@0.4.2
+338 silly currentTree | |   `-- concat-map@0.0.1
+338 silly currentTree | +-- nopt@3.0.6
+338 silly currentTree | | `-- abbrev@1.0.9
+338 silly currentTree | +-- path-is-absolute@1.0.0
+338 silly currentTree | `-- rimraf@2.2.8
+338 silly currentTree +-- gulp-util@3.0.8
+338 silly currentTree +-- gulplog@1.0.0
+338 silly currentTree +-- has-ansi@2.0.0
+338 silly currentTree +-- has-gulplog@0.1.0
+338 silly currentTree +-- homedir-polyfill@1.0.1
+338 silly currentTree +-- inflight@1.0.6
+338 silly currentTree +-- inherits@2.0.3
+338 silly currentTree +-- ini@1.3.4
+338 silly currentTree +-- interpret@1.0.1
+338 silly currentTree +-- is-absolute@0.2.6
+338 silly currentTree +-- is-buffer@1.1.4
+338 silly currentTree +-- is-dotfile@1.0.2
+338 silly currentTree +-- is-equal-shallow@0.1.3
+338 silly currentTree +-- is-extendable@0.1.1
+338 silly currentTree +-- is-extglob@1.0.0
+338 silly currentTree +-- is-glob@2.0.1
+338 silly currentTree +-- is-number@2.1.0
+338 silly currentTree +-- is-posix-bracket@0.1.1
+338 silly currentTree +-- is-primitive@2.0.0
+338 silly currentTree +-- is-relative@0.2.1
+338 silly currentTree +-- is-unc-path@0.1.2
+338 silly currentTree +-- is-utf8@0.2.1
+338 silly currentTree +-- is-windows@0.2.0
+338 silly currentTree +-- isarray@0.0.1
+338 silly currentTree +-- isexe@1.1.2
+338 silly currentTree +-- isobject@2.1.0
+338 silly currentTree | `-- isarray@1.0.0
+338 silly currentTree +-- jit-grunt@0.10.0
+338 silly currentTree +-- jshint-stylish@2.2.1
+338 silly currentTree | +-- beeper@1.1.0
+338 silly currentTree | +-- chalk@1.1.3
+338 silly currentTree | | +-- ansi-styles@2.2.1
+338 silly currentTree | | +-- escape-string-regexp@1.0.5
+338 silly currentTree | | +-- has-ansi@2.0.0
+338 silly currentTree | | | `-- ansi-regex@2.0.0
+338 silly currentTree | | +-- strip-ansi@3.0.1
+338 silly currentTree | | | `-- ansi-regex@2.0.0
+338 silly currentTree | | `-- supports-color@2.0.0
+338 silly currentTree | +-- log-symbols@1.0.2
+338 silly currentTree | +-- plur@2.1.2
+338 silly currentTree | | `-- irregular-plurals@1.2.0
+338 silly currentTree | +-- string-length@1.0.1
+338 silly currentTree | | `-- strip-ansi@3.0.1
+338 silly currentTree | |   `-- ansi-regex@2.0.0
+338 silly currentTree | `-- text-table@0.2.0
+338 silly currentTree +-- kind-of@3.1.0
+338 silly currentTree +-- liftoff@2.3.0
+338 silly currentTree +-- lodash._basecopy@3.0.1
+338 silly currentTree +-- lodash._basetostring@3.0.1
+338 silly currentTree +-- lodash._basevalues@3.0.0
+338 silly currentTree +-- lodash._getnative@3.9.1
+338 silly currentTree +-- lodash._isiterateecall@3.0.9
+338 silly currentTree +-- lodash._reescape@3.0.0
+338 silly currentTree +-- lodash._reevaluate@3.0.0
+338 silly currentTree +-- lodash._reinterpolate@3.0.0
+338 silly currentTree +-- lodash._root@3.0.1
+338 silly currentTree +-- lodash.assignwith@4.2.0
+338 silly currentTree +-- lodash.escape@3.2.0
+338 silly currentTree +-- lodash.isarguments@3.1.0
+338 silly currentTree +-- lodash.isarray@3.0.4
+338 silly currentTree +-- lodash.isempty@4.4.0
+338 silly currentTree +-- lodash.isplainobject@4.0.6
+338 silly currentTree +-- lodash.isstring@4.0.1
+338 silly currentTree +-- lodash.keys@3.1.2
+338 silly currentTree +-- lodash.mapvalues@4.6.0
+338 silly currentTree +-- lodash.pick@4.4.0
+338 silly currentTree +-- lodash.restparam@3.6.1
+338 silly currentTree +-- lodash.template@3.6.2
+338 silly currentTree +-- lodash.templatesettings@3.1.1
+338 silly currentTree +-- lodash@1.0.2
+338 silly currentTree +-- lru-cache@2.7.3
+338 silly currentTree +-- map-cache@0.2.2
+338 silly currentTree +-- micromatch@2.3.11
+338 silly currentTree +-- minimatch@2.0.10
+338 silly currentTree +-- minimist@1.2.0
+338 silly currentTree +-- multipipe@0.1.2
+338 silly currentTree +-- natives@1.1.0
+338 silly currentTree +-- normalize-path@2.0.1
+338 silly currentTree +-- object-assign@3.0.0
+338 silly currentTree +-- object.omit@2.0.1
+338 silly currentTree +-- once@1.3.3
+338 silly currentTree +-- orchestrator@0.3.8
+338 silly currentTree +-- ordered-read-streams@0.1.0
+338 silly currentTree +-- os-homedir@1.0.2
+338 silly currentTree +-- parse-filepath@1.0.1
+338 silly currentTree +-- parse-glob@3.0.4
+338 silly currentTree +-- parse-passwd@1.0.0
+338 silly currentTree +-- particles.js@2.0.0
+338 silly currentTree +-- path-root-regex@0.1.2
+338 silly currentTree +-- path-root@0.1.1
+338 silly currentTree +-- preserve@0.2.0
+338 silly currentTree +-- pretty-hrtime@1.0.3
+338 silly currentTree +-- process-nextick-args@1.0.7
+338 silly currentTree +-- randomatic@1.1.6
+338 silly currentTree +-- readable-stream@1.1.14
+338 silly currentTree +-- rechoir@0.6.2
+338 silly currentTree +-- regex-cache@0.4.3
+338 silly currentTree +-- repeat-element@1.1.2
+338 silly currentTree +-- repeat-string@1.6.1
+338 silly currentTree +-- replace-ext@0.0.1
+338 silly currentTree +-- resolve-dir@0.1.1
+338 silly currentTree +-- resolve@1.2.0
+338 silly currentTree +-- semver@4.3.6
+338 silly currentTree +-- sequencify@0.0.7
+338 silly currentTree +-- sigmund@1.0.1
+338 silly currentTree +-- sparkles@1.0.0
+338 silly currentTree +-- stream-consume@0.1.0
+338 silly currentTree +-- string_decoder@0.10.31
+338 silly currentTree +-- strip-ansi@3.0.1
+338 silly currentTree +-- strip-bom@1.0.0
+338 silly currentTree +-- supports-color@2.0.0
+338 silly currentTree +-- through2@2.0.3
+338 silly currentTree | +-- isarray@1.0.0
+338 silly currentTree | `-- readable-stream@2.2.2
+338 silly currentTree +-- tildify@1.2.0
+338 silly currentTree +-- time-grunt@1.4.0
+338 silly currentTree | +-- chalk@1.1.3
+338 silly currentTree | | +-- ansi-styles@2.2.1
+338 silly currentTree | | +-- escape-string-regexp@1.0.5
+338 silly currentTree | | +-- has-ansi@2.0.0
+338 silly currentTree | | | `-- ansi-regex@2.0.0
+338 silly currentTree | | +-- strip-ansi@3.0.1
+338 silly currentTree | | | `-- ansi-regex@2.0.0
+338 silly currentTree | | `-- supports-color@2.0.0
+338 silly currentTree | +-- date-time@1.1.0
+338 silly currentTree | | `-- time-zone@0.1.0
+338 silly currentTree | +-- figures@1.7.0
+338 silly currentTree | | +-- escape-string-regexp@1.0.5
+338 silly currentTree | | `-- object-assign@4.1.0
+338 silly currentTree | +-- hooker@0.2.3
+338 silly currentTree | +-- number-is-nan@1.0.0
+338 silly currentTree | +-- pretty-ms@2.1.0
+338 silly currentTree | | +-- is-finite@1.0.1
+338 silly currentTree | | +-- parse-ms@1.0.1
+338 silly currentTree | | `-- plur@1.0.0
+338 silly currentTree | `-- text-table@0.2.0
+338 silly currentTree +-- time-stamp@1.0.1
+338 silly currentTree +-- unc-path-regex@0.1.2
+338 silly currentTree +-- unique-stream@1.0.0
+338 silly currentTree +-- user-home@1.1.1
+338 silly currentTree +-- util-deprecate@1.0.2
+338 silly currentTree +-- v8flags@2.0.11
+338 silly currentTree +-- vinyl@0.5.3
+338 silly currentTree +-- which@1.2.12
+338 silly currentTree +-- wrappy@1.0.2
+338 silly currentTree `-- xtend@4.0.1
+339 silly idealTree raounak
+339 silly idealTree +-- ansi-regex@2.1.1
+339 silly idealTree +-- ansi-styles@2.2.1
+339 silly idealTree +-- archy@1.0.0
+339 silly idealTree +-- arr-diff@2.0.0
+339 silly idealTree +-- arr-flatten@1.0.1
+339 silly idealTree +-- array-differ@1.0.0
+339 silly idealTree +-- array-uniq@1.0.3
+339 silly idealTree +-- array-unique@0.2.1
+339 silly idealTree +-- balanced-match@0.4.2
+339 silly idealTree +-- beeper@1.1.1
+339 silly idealTree +-- brace-expansion@1.1.6
+339 silly idealTree +-- braces@1.8.5
+339 silly idealTree +-- buffer-shims@1.0.0
+339 silly idealTree +-- chalk@1.1.3
+339 silly idealTree +-- clone-stats@0.0.1
+339 silly idealTree +-- clone@1.0.2
+339 silly idealTree +-- concat-map@0.0.1
+339 silly idealTree +-- core-util-is@1.0.2
+339 silly idealTree +-- dateformat@2.0.0
+339 silly idealTree +-- defaults@1.0.3
+339 silly idealTree +-- deprecated@0.0.1
+339 silly idealTree +-- detect-file@0.1.0
+339 silly idealTree +-- duplexer2@0.0.2
+339 silly idealTree +-- end-of-stream@0.1.5
+339 silly idealTree +-- escape-string-regexp@1.0.5
+339 silly idealTree +-- expand-brackets@0.1.5
+339 silly idealTree +-- expand-range@1.8.2
+339 silly idealTree +-- expand-tilde@1.2.2
+339 silly idealTree +-- extend@3.0.0
+339 silly idealTree +-- extglob@0.3.2
+339 silly idealTree +-- fancy-log@1.3.0
+339 silly idealTree +-- filename-regex@2.0.0
+339 silly idealTree +-- fill-range@2.2.3
+339 silly idealTree +-- find-index@0.1.1
+339 silly idealTree +-- findup-sync@0.4.3
+339 silly idealTree +-- fined@1.0.2
+339 silly idealTree +-- firebase@3.6.4
+339 silly idealTree | +-- base64-url@1.3.3
+339 silly idealTree | +-- base64url@2.0.0
+339 silly idealTree | +-- buffer-equal-constant-time@1.0.1
+339 silly idealTree | +-- dom-storage@2.0.2
+339 silly idealTree | +-- ecdsa-sig-formatter@1.0.7
+339 silly idealTree | +-- faye-websocket@0.9.3
+339 silly idealTree | +-- hoek@2.16.3
+339 silly idealTree | +-- isemail@1.2.0
+339 silly idealTree | +-- joi@6.10.1
+339 silly idealTree | +-- jsonwebtoken@7.1.9
+339 silly idealTree | +-- jwa@1.1.4
+339 silly idealTree | +-- jws@3.1.4
+339 silly idealTree | +-- lodash.once@4.1.1
+339 silly idealTree | +-- moment@2.16.0
+339 silly idealTree | +-- ms@0.7.2
+339 silly idealTree | +-- rsvp@3.2.1
+339 silly idealTree | +-- safe-buffer@5.0.1
+339 silly idealTree | +-- topo@1.1.0
+339 silly idealTree | +-- websocket-driver@0.6.5
+339 silly idealTree | +-- websocket-extensions@0.1.1
+339 silly idealTree | +-- xmlhttprequest@1.8.0
+339 silly idealTree | `-- xtend@4.0.1
+339 silly idealTree +-- first-chunk-stream@1.0.0
+339 silly idealTree +-- flagged-respawn@0.3.2
+339 silly idealTree +-- for-in@0.1.6
+339 silly idealTree +-- for-own@0.1.4
+339 silly idealTree +-- fs-exists-sync@0.1.0
+339 silly idealTree +-- gaze@0.5.2
+339 silly idealTree +-- glob-base@0.3.0
+339 silly idealTree +-- glob-parent@2.0.0
+339 silly idealTree +-- glob-stream@3.1.18
+339 silly idealTree | +-- readable-stream@1.0.34
+339 silly idealTree | `-- through2@0.6.5
+339 silly idealTree +-- glob-watcher@0.0.6
+339 silly idealTree +-- glob@4.5.3
+339 silly idealTree +-- glob2base@0.0.12
+339 silly idealTree +-- global-modules@0.2.3
+339 silly idealTree +-- global-prefix@0.1.5
+339 silly idealTree +-- globule@0.1.0
+339 silly idealTree | +-- glob@3.1.21
+339 silly idealTree | +-- graceful-fs@1.2.3
+339 silly idealTree | +-- inherits@1.0.2
+339 silly idealTree | `-- minimatch@0.2.14
+339 silly idealTree +-- glogg@1.0.0
+339 silly idealTree +-- graceful-fs@3.0.11
+339 silly idealTree +-- grunt-contrib-connect@1.0.2
+339 silly idealTree | +-- async@1.5.2
+339 silly idealTree | +-- connect-livereload@0.5.4
+339 silly idealTree | +-- connect@3.4.1
+339 silly idealTree | | +-- debug@2.2.0
+339 silly idealTree | | | `-- ms@0.7.1
+339 silly idealTree | | +-- finalhandler@0.4.1
+339 silly idealTree | | | +-- escape-html@1.0.3
+339 silly idealTree | | | +-- on-finished@2.3.0
+339 silly idealTree | | | | `-- ee-first@1.1.1
+339 silly idealTree | | | `-- unpipe@1.0.0
+339 silly idealTree | | +-- parseurl@1.3.1
+339 silly idealTree | | `-- utils-merge@1.0.0
+339 silly idealTree | +-- http2@3.3.4
+339 silly idealTree | +-- morgan@1.7.0
+339 silly idealTree | | +-- basic-auth@1.0.4
+339 silly idealTree | | +-- debug@2.2.0
+339 silly idealTree | | | `-- ms@0.7.1
+339 silly idealTree | | +-- depd@1.1.0
+339 silly idealTree | | +-- on-finished@2.3.0
+339 silly idealTree | | | `-- ee-first@1.1.1
+339 silly idealTree | | `-- on-headers@1.0.1
+339 silly idealTree | +-- opn@4.0.2
+339 silly idealTree | | +-- object-assign@4.1.0
+339 silly idealTree | | `-- pinkie-promise@2.0.1
+339 silly idealTree | |   `-- pinkie@2.0.4
+339 silly idealTree | +-- portscanner@1.0.0
+339 silly idealTree | | `-- async@0.1.15
+339 silly idealTree | +-- serve-index@1.8.0
+339 silly idealTree | | +-- accepts@1.3.3
+339 silly idealTree | | | `-- negotiator@0.6.1
+339 silly idealTree | | +-- batch@0.5.3
+339 silly idealTree | | +-- debug@2.2.0
+339 silly idealTree | | | `-- ms@0.7.1
+339 silly idealTree | | +-- escape-html@1.0.3
+339 silly idealTree | | +-- http-errors@1.5.0
+339 silly idealTree | | | +-- inherits@2.0.1
+339 silly idealTree | | | +-- setprototypeof@1.0.1
+339 silly idealTree | | | `-- statuses@1.3.0
+339 silly idealTree | | +-- mime-types@2.1.11
+339 silly idealTree | | | `-- mime-db@1.23.0
+339 silly idealTree | | `-- parseurl@1.3.1
+339 silly idealTree | `-- serve-static@1.11.1
+339 silly idealTree |   +-- encodeurl@1.0.1
+339 silly idealTree |   +-- escape-html@1.0.3
+339 silly idealTree |   +-- parseurl@1.3.1
+339 silly idealTree |   `-- send@0.14.1
+339 silly idealTree |     +-- debug@2.2.0
+339 silly idealTree |     +-- depd@1.1.0
+339 silly idealTree |     +-- destroy@1.0.4
+339 silly idealTree |     +-- etag@1.7.0
+339 silly idealTree |     +-- fresh@0.3.0
+339 silly idealTree |     +-- http-errors@1.5.0
+339 silly idealTree |     | +-- inherits@2.0.1
+339 silly idealTree |     | `-- setprototypeof@1.0.1
+339 silly idealTree |     +-- mime@1.3.4
+339 silly idealTree |     +-- ms@0.7.1
+339 silly idealTree |     +-- on-finished@2.3.0
+339 silly idealTree |     | `-- ee-first@1.1.1
+339 silly idealTree |     +-- range-parser@1.2.0
+339 silly idealTree |     `-- statuses@1.3.0
+339 silly idealTree +-- grunt-contrib-jshint@1.0.0
+339 silly idealTree | +-- chalk@1.1.3
+339 silly idealTree | | +-- ansi-styles@2.2.1
+339 silly idealTree | | +-- escape-string-regexp@1.0.5
+339 silly idealTree | | +-- has-ansi@2.0.0
+339 silly idealTree | | | `-- ansi-regex@2.0.0
+339 silly idealTree | | +-- strip-ansi@3.0.1
+339 silly idealTree | | | `-- ansi-regex@2.0.0
+339 silly idealTree | | `-- supports-color@2.0.0
+339 silly idealTree | +-- hooker@0.2.3
+339 silly idealTree | `-- jshint@2.9.3
+339 silly idealTree |   +-- cli@1.0.0
+339 silly idealTree |   | `-- glob@7.0.6
+339 silly idealTree |   |   +-- fs.realpath@1.0.0
+339 silly idealTree |   |   +-- inflight@1.0.5
+339 silly idealTree |   |   | `-- wrappy@1.0.2
+339 silly idealTree |   |   +-- inherits@2.0.1
+339 silly idealTree |   |   +-- once@1.3.3
+339 silly idealTree |   |   | `-- wrappy@1.0.2
+339 silly idealTree |   |   `-- path-is-absolute@1.0.0
+339 silly idealTree |   +-- console-browserify@1.1.0
+339 silly idealTree |   | `-- date-now@0.1.4
+339 silly idealTree |   +-- exit@0.1.2
+339 silly idealTree |   +-- htmlparser2@3.8.3
+339 silly idealTree |   | +-- domelementtype@1.3.0
+339 silly idealTree |   | +-- domhandler@2.3.0
+339 silly idealTree |   | +-- domutils@1.5.1
+339 silly idealTree |   | | `-- dom-serializer@0.1.0
+339 silly idealTree |   | |   +-- domelementtype@1.1.3
+339 silly idealTree |   | |   `-- entities@1.1.1
+339 silly idealTree |   | +-- entities@1.0.0
+339 silly idealTree |   | `-- readable-stream@1.1.14
+339 silly idealTree |   |   +-- core-util-is@1.0.2
+339 silly idealTree |   |   +-- inherits@2.0.1
+339 silly idealTree |   |   +-- isarray@0.0.1
+339 silly idealTree |   |   `-- string_decoder@0.10.31
+339 silly idealTree |   +-- lodash@3.7.0
+339 silly idealTree |   +-- minimatch@3.0.3
+339 silly idealTree |   | `-- brace-expansion@1.1.6
+339 silly idealTree |   |   +-- balanced-match@0.4.2
+339 silly idealTree |   |   `-- concat-map@0.0.1
+339 silly idealTree |   +-- shelljs@0.3.0
+339 silly idealTree |   `-- strip-json-comments@1.0.4
+339 silly idealTree +-- grunt-contrib-watch@1.0.0
+339 silly idealTree | +-- async@1.5.2
+339 silly idealTree | +-- gaze@1.1.1
+339 silly idealTree | | `-- globule@1.0.0
+339 silly idealTree | |   +-- glob@7.0.6
+339 silly idealTree | |   | +-- fs.realpath@1.0.0
+339 silly idealTree | |   | +-- inflight@1.0.5
+339 silly idealTree | |   | | `-- wrappy@1.0.2
+339 silly idealTree | |   | +-- inherits@2.0.1
+339 silly idealTree | |   | +-- once@1.3.3
+339 silly idealTree | |   | | `-- wrappy@1.0.2
+339 silly idealTree | |   | `-- path-is-absolute@1.0.0
+339 silly idealTree | |   +-- lodash@4.9.0
+339 silly idealTree | |   `-- minimatch@3.0.3
+339 silly idealTree | |     `-- brace-expansion@1.1.6
+339 silly idealTree | |       +-- balanced-match@0.4.2
+339 silly idealTree | |       `-- concat-map@0.0.1
+339 silly idealTree | +-- lodash@3.10.1
+339 silly idealTree | `-- tiny-lr@0.2.1
+339 silly idealTree |   +-- body-parser@1.14.2
+339 silly idealTree |   | +-- bytes@2.2.0
+339 silly idealTree |   | +-- content-type@1.0.2
+339 silly idealTree |   | +-- depd@1.1.0
+339 silly idealTree |   | +-- http-errors@1.3.1
+339 silly idealTree |   | | +-- inherits@2.0.1
+339 silly idealTree |   | | `-- statuses@1.3.0
+339 silly idealTree |   | +-- iconv-lite@0.4.13
+339 silly idealTree |   | +-- on-finished@2.3.0
+339 silly idealTree |   | | `-- ee-first@1.1.1
+339 silly idealTree |   | +-- qs@5.2.0
+339 silly idealTree |   | +-- raw-body@2.1.7
+339 silly idealTree |   | | +-- bytes@2.4.0
+339 silly idealTree |   | | `-- unpipe@1.0.0
+339 silly idealTree |   | `-- type-is@1.6.13
+339 silly idealTree |   |   +-- media-typer@0.3.0
+339 silly idealTree |   |   `-- mime-types@2.1.11
+339 silly idealTree |   |     `-- mime-db@1.23.0
+339 silly idealTree |   +-- debug@2.2.0
+339 silly idealTree |   | `-- ms@0.7.1
+339 silly idealTree |   +-- faye-websocket@0.10.0
+339 silly idealTree |   | `-- websocket-driver@0.6.5
+339 silly idealTree |   |   `-- websocket-extensions@0.1.1
+339 silly idealTree |   +-- livereload-js@2.2.2
+339 silly idealTree |   +-- parseurl@1.3.1
+339 silly idealTree |   `-- qs@5.1.0
+339 silly idealTree +-- grunt@1.0.1
+339 silly idealTree | +-- coffee-script@1.10.0
+339 silly idealTree | +-- dateformat@1.0.12
+339 silly idealTree | | +-- get-stdin@4.0.1
+339 silly idealTree | | `-- meow@3.7.0
+339 silly idealTree | |   +-- camelcase-keys@2.1.0
+339 silly idealTree | |   | `-- camelcase@2.1.1
+339 silly idealTree | |   +-- decamelize@1.2.0
+339 silly idealTree | |   +-- loud-rejection@1.6.0
+339 silly idealTree | |   | +-- currently-unhandled@0.4.1
+339 silly idealTree | |   | | `-- array-find-index@1.0.1
+339 silly idealTree | |   | `-- signal-exit@3.0.0
+339 silly idealTree | |   +-- map-obj@1.0.1
+339 silly idealTree | |   +-- minimist@1.2.0
+339 silly idealTree | |   +-- normalize-package-data@2.3.5
+339 silly idealTree | |   | +-- hosted-git-info@2.1.5
+339 silly idealTree | |   | +-- is-builtin-module@1.0.0
+339 silly idealTree | |   | | `-- builtin-modules@1.1.1
+339 silly idealTree | |   | +-- semver@5.3.0
+339 silly idealTree | |   | `-- validate-npm-package-license@3.0.1
+339 silly idealTree | |   |   +-- spdx-correct@1.0.2
+339 silly idealTree | |   |   | `-- spdx-license-ids@1.2.2
+339 silly idealTree | |   |   `-- spdx-expression-parse@1.0.3
+339 silly idealTree | |   +-- object-assign@4.1.0
+339 silly idealTree | |   +-- read-pkg-up@1.0.1
+339 silly idealTree | |   | +-- find-up@1.1.2
+339 silly idealTree | |   | | +-- path-exists@2.1.0
+339 silly idealTree | |   | | `-- pinkie-promise@2.0.1
+339 silly idealTree | |   | |   `-- pinkie@2.0.4
+339 silly idealTree | |   | `-- read-pkg@1.1.0
+339 silly idealTree | |   |   +-- load-json-file@1.1.0
+339 silly idealTree | |   |   | +-- graceful-fs@4.1.6
+339 silly idealTree | |   |   | +-- parse-json@2.2.0
+339 silly idealTree | |   |   | | `-- error-ex@1.3.0
+339 silly idealTree | |   |   | |   `-- is-arrayish@0.2.1
+339 silly idealTree | |   |   | +-- pify@2.3.0
+339 silly idealTree | |   |   | +-- pinkie-promise@2.0.1
+339 silly idealTree | |   |   | | `-- pinkie@2.0.4
+339 silly idealTree | |   |   | `-- strip-bom@2.0.0
+339 silly idealTree | |   |   |   `-- is-utf8@0.2.1
+339 silly idealTree | |   |   `-- path-type@1.1.0
+339 silly idealTree | |   |     +-- graceful-fs@4.1.6
+339 silly idealTree | |   |     +-- pify@2.3.0
+339 silly idealTree | |   |     `-- pinkie-promise@2.0.1
+339 silly idealTree | |   |       `-- pinkie@2.0.4
+339 silly idealTree | |   +-- redent@1.0.0
+339 silly idealTree | |   | +-- indent-string@2.1.0
+339 silly idealTree | |   | | `-- repeating@2.0.1
+339 silly idealTree | |   | |   `-- is-finite@1.0.1
+339 silly idealTree | |   | |     `-- number-is-nan@1.0.0
+339 silly idealTree | |   | `-- strip-indent@1.0.1
+339 silly idealTree | |   `-- trim-newlines@1.0.0
+339 silly idealTree | +-- eventemitter2@0.4.14
+339 silly idealTree | +-- exit@0.1.2
+339 silly idealTree | +-- findup-sync@0.3.0
+339 silly idealTree | | `-- glob@5.0.15
+339 silly idealTree | |   +-- inflight@1.0.5
+339 silly idealTree | |   | `-- wrappy@1.0.2
+339 silly idealTree | |   +-- inherits@2.0.1
+339 silly idealTree | |   `-- once@1.3.3
+339 silly idealTree | |     `-- wrappy@1.0.2
+339 silly idealTree | +-- glob@7.0.6
+339 silly idealTree | | +-- fs.realpath@1.0.0
+339 silly idealTree | | +-- inflight@1.0.5
+339 silly idealTree | | | `-- wrappy@1.0.2
+339 silly idealTree | | +-- inherits@2.0.1
+339 silly idealTree | | `-- once@1.3.3
+339 silly idealTree | |   `-- wrappy@1.0.2
+339 silly idealTree | +-- grunt-cli@1.2.0
+339 silly idealTree | | `-- resolve@1.1.7
+339 silly idealTree | +-- grunt-known-options@1.1.0
+339 silly idealTree | +-- grunt-legacy-log@1.0.0
+339 silly idealTree | | +-- colors@1.1.2
+339 silly idealTree | | +-- grunt-legacy-log-utils@1.0.0
+339 silly idealTree | | | +-- chalk@1.1.3
+339 silly idealTree | | | | +-- ansi-styles@2.2.1
+339 silly idealTree | | | | +-- escape-string-regexp@1.0.5
+339 silly idealTree | | | | +-- has-ansi@2.0.0
+339 silly idealTree | | | | | `-- ansi-regex@2.0.0
+339 silly idealTree | | | | +-- strip-ansi@3.0.1
+339 silly idealTree | | | | | `-- ansi-regex@2.0.0
+339 silly idealTree | | | | `-- supports-color@2.0.0
+339 silly idealTree | | | `-- lodash@4.3.0
+339 silly idealTree | | +-- hooker@0.2.3
+339 silly idealTree | | +-- lodash@3.10.1
+339 silly idealTree | | `-- underscore.string@3.2.3
+339 silly idealTree | +-- grunt-legacy-util@1.0.0
+339 silly idealTree | | +-- async@1.5.2
+339 silly idealTree | | +-- getobject@0.1.0
+339 silly idealTree | | +-- hooker@0.2.3
+339 silly idealTree | | +-- lodash@4.3.0
+339 silly idealTree | | +-- underscore.string@3.2.3
+339 silly idealTree | | `-- which@1.2.10
+339 silly idealTree | |   `-- isexe@1.1.2
+339 silly idealTree | +-- iconv-lite@0.4.13
+339 silly idealTree | +-- js-yaml@3.5.5
+339 silly idealTree | | +-- argparse@1.0.7
+339 silly idealTree | | | `-- sprintf-js@1.0.3
+339 silly idealTree | | `-- esprima@2.7.3
+339 silly idealTree | +-- minimatch@3.0.3
+339 silly idealTree | | `-- brace-expansion@1.1.6
+339 silly idealTree | |   +-- balanced-match@0.4.2
+339 silly idealTree | |   `-- concat-map@0.0.1
+339 silly idealTree | +-- nopt@3.0.6
+339 silly idealTree | | `-- abbrev@1.0.9
+339 silly idealTree | +-- path-is-absolute@1.0.0
+339 silly idealTree | `-- rimraf@2.2.8
+339 silly idealTree +-- gulp-util@3.0.8
+339 silly idealTree +-- gulp@3.9.1
+339 silly idealTree +-- gulplog@1.0.0
+339 silly idealTree +-- has-ansi@2.0.0
+339 silly idealTree +-- has-gulplog@0.1.0
+339 silly idealTree +-- homedir-polyfill@1.0.1
+339 silly idealTree +-- inflight@1.0.6
+339 silly idealTree +-- inherits@2.0.3
+339 silly idealTree +-- ini@1.3.4
+339 silly idealTree +-- interpret@1.0.1
+339 silly idealTree +-- is-absolute@0.2.6
+339 silly idealTree +-- is-buffer@1.1.4
+339 silly idealTree +-- is-dotfile@1.0.2
+339 silly idealTree +-- is-equal-shallow@0.1.3
+339 silly idealTree +-- is-extendable@0.1.1
+339 silly idealTree +-- is-extglob@1.0.0
+339 silly idealTree +-- is-glob@2.0.1
+339 silly idealTree +-- is-number@2.1.0
+339 silly idealTree +-- is-posix-bracket@0.1.1
+339 silly idealTree +-- is-primitive@2.0.0
+339 silly idealTree +-- is-relative@0.2.1
+339 silly idealTree +-- is-unc-path@0.1.2
+339 silly idealTree +-- is-utf8@0.2.1
+339 silly idealTree +-- is-windows@0.2.0
+339 silly idealTree +-- isarray@0.0.1
+339 silly idealTree +-- isexe@1.1.2
+339 silly idealTree +-- isobject@2.1.0
+339 silly idealTree | `-- isarray@1.0.0
+339 silly idealTree +-- jit-grunt@0.10.0
+339 silly idealTree +-- jshint-stylish@2.2.1
+339 silly idealTree | +-- beeper@1.1.0
+339 silly idealTree | +-- chalk@1.1.3
+339 silly idealTree | | +-- ansi-styles@2.2.1
+339 silly idealTree | | +-- escape-string-regexp@1.0.5
+339 silly idealTree | | +-- has-ansi@2.0.0
+339 silly idealTree | | | `-- ansi-regex@2.0.0
+339 silly idealTree | | +-- strip-ansi@3.0.1
+339 silly idealTree | | | `-- ansi-regex@2.0.0
+339 silly idealTree | | `-- supports-color@2.0.0
+339 silly idealTree | +-- log-symbols@1.0.2
+339 silly idealTree | +-- plur@2.1.2
+339 silly idealTree | | `-- irregular-plurals@1.2.0
+339 silly idealTree | +-- string-length@1.0.1
+339 silly idealTree | | `-- strip-ansi@3.0.1
+339 silly idealTree | |   `-- ansi-regex@2.0.0
+339 silly idealTree | `-- text-table@0.2.0
+339 silly idealTree +-- kind-of@3.1.0
+339 silly idealTree +-- liftoff@2.3.0
+339 silly idealTree +-- lodash._basecopy@3.0.1
+339 silly idealTree +-- lodash._basetostring@3.0.1
+339 silly idealTree +-- lodash._basevalues@3.0.0
+339 silly idealTree +-- lodash._getnative@3.9.1
+339 silly idealTree +-- lodash._isiterateecall@3.0.9
+339 silly idealTree +-- lodash._reescape@3.0.0
+339 silly idealTree +-- lodash._reevaluate@3.0.0
+339 silly idealTree +-- lodash._reinterpolate@3.0.0
+339 silly idealTree +-- lodash._root@3.0.1
+339 silly idealTree +-- lodash.assignwith@4.2.0
+339 silly idealTree +-- lodash.escape@3.2.0
+339 silly idealTree +-- lodash.isarguments@3.1.0
+339 silly idealTree +-- lodash.isarray@3.0.4
+339 silly idealTree +-- lodash.isempty@4.4.0
+339 silly idealTree +-- lodash.isplainobject@4.0.6
+339 silly idealTree +-- lodash.isstring@4.0.1
+339 silly idealTree +-- lodash.keys@3.1.2
+339 silly idealTree +-- lodash.mapvalues@4.6.0
+339 silly idealTree +-- lodash.pick@4.4.0
+339 silly idealTree +-- lodash.restparam@3.6.1
+339 silly idealTree +-- lodash.template@3.6.2
+339 silly idealTree +-- lodash.templatesettings@3.1.1
+339 silly idealTree +-- lodash@1.0.2
+339 silly idealTree +-- lru-cache@2.7.3
+339 silly idealTree +-- map-cache@0.2.2
+339 silly idealTree +-- micromatch@2.3.11
+339 silly idealTree +-- minimatch@2.0.10
+339 silly idealTree +-- minimist@1.2.0
+339 silly idealTree +-- mkdirp@0.5.1
+339 silly idealTree | `-- minimist@0.0.8
+339 silly idealTree +-- multipipe@0.1.2
+339 silly idealTree +-- natives@1.1.0
+339 silly idealTree +-- normalize-path@2.0.1
+339 silly idealTree +-- object-assign@3.0.0
+339 silly idealTree +-- object.omit@2.0.1
+339 silly idealTree +-- once@1.3.3
+339 silly idealTree +-- orchestrator@0.3.8
+339 silly idealTree +-- ordered-read-streams@0.1.0
+339 silly idealTree +-- os-homedir@1.0.2
+339 silly idealTree +-- parse-filepath@1.0.1
+339 silly idealTree +-- parse-glob@3.0.4
+339 silly idealTree +-- parse-passwd@1.0.0
+339 silly idealTree +-- particles.js@2.0.0
+339 silly idealTree +-- path-root-regex@0.1.2
+339 silly idealTree +-- path-root@0.1.1
+339 silly idealTree +-- preserve@0.2.0
+339 silly idealTree +-- pretty-hrtime@1.0.3
+339 silly idealTree +-- process-nextick-args@1.0.7
+339 silly idealTree +-- randomatic@1.1.6
+339 silly idealTree +-- readable-stream@1.1.14
+339 silly idealTree +-- rechoir@0.6.2
+339 silly idealTree +-- regex-cache@0.4.3
+339 silly idealTree +-- repeat-element@1.1.2
+339 silly idealTree +-- repeat-string@1.6.1
+339 silly idealTree +-- replace-ext@0.0.1
+339 silly idealTree +-- resolve-dir@0.1.1
+339 silly idealTree +-- resolve@1.2.0
+339 silly idealTree +-- semver@4.3.6
+339 silly idealTree +-- sequencify@0.0.7
+339 silly idealTree +-- sigmund@1.0.1
+339 silly idealTree +-- sparkles@1.0.0
+339 silly idealTree +-- stream-consume@0.1.0
+339 silly idealTree +-- string_decoder@0.10.31
+339 silly idealTree +-- strip-ansi@3.0.1
+339 silly idealTree +-- strip-bom@1.0.0
+339 silly idealTree +-- supports-color@2.0.0
+339 silly idealTree +-- through2@2.0.3
+339 silly idealTree | +-- isarray@1.0.0
+339 silly idealTree | `-- readable-stream@2.2.2
+339 silly idealTree +-- tildify@1.2.0
+339 silly idealTree +-- time-grunt@1.4.0
+339 silly idealTree | +-- chalk@1.1.3
+339 silly idealTree | | +-- ansi-styles@2.2.1
+339 silly idealTree | | +-- escape-string-regexp@1.0.5
+339 silly idealTree | | +-- has-ansi@2.0.0
+339 silly idealTree | | | `-- ansi-regex@2.0.0
+339 silly idealTree | | +-- strip-ansi@3.0.1
+339 silly idealTree | | | `-- ansi-regex@2.0.0
+339 silly idealTree | | `-- supports-color@2.0.0
+339 silly idealTree | +-- date-time@1.1.0
+339 silly idealTree | | `-- time-zone@0.1.0
+339 silly idealTree | +-- figures@1.7.0
+339 silly idealTree | | +-- escape-string-regexp@1.0.5
+339 silly idealTree | | `-- object-assign@4.1.0
+339 silly idealTree | +-- hooker@0.2.3
+339 silly idealTree | +-- number-is-nan@1.0.0
+339 silly idealTree | +-- pretty-ms@2.1.0
+339 silly idealTree | | +-- is-finite@1.0.1
+339 silly idealTree | | +-- parse-ms@1.0.1
+339 silly idealTree | | `-- plur@1.0.0
+339 silly idealTree | `-- text-table@0.2.0
+339 silly idealTree +-- time-stamp@1.0.1
+339 silly idealTree +-- unc-path-regex@0.1.2
+339 silly idealTree +-- unique-stream@1.0.0
+339 silly idealTree +-- user-home@1.1.1
+339 silly idealTree +-- util-deprecate@1.0.2
+339 silly idealTree +-- v8flags@2.0.11
+339 silly idealTree +-- vinyl-fs@0.3.14
+339 silly idealTree | +-- clone@0.2.0
+339 silly idealTree | +-- readable-stream@1.0.34
+339 silly idealTree | +-- through2@0.6.5
+339 silly idealTree | `-- vinyl@0.4.6
+339 silly idealTree +-- vinyl@0.5.3
+339 silly idealTree +-- which@1.2.12
+339 silly idealTree +-- wrappy@1.0.2
+339 silly idealTree `-- xtend@4.0.1
+340 silly generateActionsToTake Starting
+341 silly install generateActionsToTake
+342 silly generateActionsToTake Finishing
+343 silly diffTrees action count 8
+344 silly diffTrees add minimist@0.0.8
+345 silly diffTrees add mkdirp@0.5.1
+346 silly diffTrees add clone@0.2.0
+347 silly diffTrees add readable-stream@1.0.34
+348 silly diffTrees add through2@0.6.5
+349 silly diffTrees add vinyl@0.4.6
+350 silly diffTrees add vinyl-fs@0.3.14
+351 silly diffTrees add gulp@3.9.1
+352 silly decomposeActions action count 64
+353 silly decomposeActions fetch minimist@0.0.8
+354 silly decomposeActions extract minimist@0.0.8
+355 silly decomposeActions test minimist@0.0.8
+356 silly decomposeActions preinstall minimist@0.0.8
+357 silly decomposeActions build minimist@0.0.8
+358 silly decomposeActions install minimist@0.0.8
+359 silly decomposeActions postinstall minimist@0.0.8
+360 silly decomposeActions finalize minimist@0.0.8
+361 silly decomposeActions fetch mkdirp@0.5.1
+362 silly decomposeActions extract mkdirp@0.5.1
+363 silly decomposeActions test mkdirp@0.5.1
+364 silly decomposeActions preinstall mkdirp@0.5.1
+365 silly decomposeActions build mkdirp@0.5.1
+366 silly decomposeActions install mkdirp@0.5.1
+367 silly decomposeActions postinstall mkdirp@0.5.1
+368 silly decomposeActions finalize mkdirp@0.5.1
+369 silly decomposeActions fetch clone@0.2.0
+370 silly decomposeActions extract clone@0.2.0
+371 silly decomposeActions test clone@0.2.0
+372 silly decomposeActions preinstall clone@0.2.0
+373 silly decomposeActions build clone@0.2.0
+374 silly decomposeActions install clone@0.2.0
+375 silly decomposeActions postinstall clone@0.2.0
+376 silly decomposeActions finalize clone@0.2.0
+377 silly decomposeActions fetch readable-stream@1.0.34
+378 silly decomposeActions extract readable-stream@1.0.34
+379 silly decomposeActions test readable-stream@1.0.34
+380 silly decomposeActions preinstall readable-stream@1.0.34
+381 silly decomposeActions build readable-stream@1.0.34
+382 silly decomposeActions install readable-stream@1.0.34
+383 silly decomposeActions postinstall readable-stream@1.0.34
+384 silly decomposeActions finalize readable-stream@1.0.34
+385 silly decomposeActions fetch through2@0.6.5
+386 silly decomposeActions extract through2@0.6.5
+387 silly decomposeActions test through2@0.6.5
+388 silly decomposeActions preinstall through2@0.6.5
+389 silly decomposeActions build through2@0.6.5
+390 silly decomposeActions install through2@0.6.5
+391 silly decomposeActions postinstall through2@0.6.5
+392 silly decomposeActions finalize through2@0.6.5
+393 silly decomposeActions fetch vinyl@0.4.6
+394 silly decomposeActions extract vinyl@0.4.6
+395 silly decomposeActions test vinyl@0.4.6
+396 silly decomposeActions preinstall vinyl@0.4.6
+397 silly decomposeActions build vinyl@0.4.6
+398 silly decomposeActions install vinyl@0.4.6
+399 silly decomposeActions postinstall vinyl@0.4.6
+400 silly decomposeActions finalize vinyl@0.4.6
+401 silly decomposeActions fetch vinyl-fs@0.3.14
+402 silly decomposeActions extract vinyl-fs@0.3.14
+403 silly decomposeActions test vinyl-fs@0.3.14
+404 silly decomposeActions preinstall vinyl-fs@0.3.14
+405 silly decomposeActions build vinyl-fs@0.3.14
+406 silly decomposeActions install vinyl-fs@0.3.14
+407 silly decomposeActions postinstall vinyl-fs@0.3.14
+408 silly decomposeActions finalize vinyl-fs@0.3.14
+409 silly decomposeActions fetch gulp@3.9.1
+410 silly decomposeActions extract gulp@3.9.1
+411 silly decomposeActions test gulp@3.9.1
+412 silly decomposeActions preinstall gulp@3.9.1
+413 silly decomposeActions build gulp@3.9.1
+414 silly decomposeActions install gulp@3.9.1
+415 silly decomposeActions postinstall gulp@3.9.1
+416 silly decomposeActions finalize gulp@3.9.1
+417 silly runTopLevelLifecycles Starting
+418 silly executeActions Starting
+419 silly install executeActions
+420 silly doSerial global-install 0
+421 silly doParallel fetch 8
+422 verbose correctMkdir /home/raounak/.npm/_locks correctMkdir not in flight; initializing
+423 verbose lock using /home/raounak/.npm/_locks/staging-b8be4bb348a6ed59.lock for /home/raounak/node_modules/.staging
+424 silly doParallel extract 8
+425 silly extract minimist@0.0.8
+426 silly extract mkdirp@0.5.1
+427 silly extract clone@0.2.0
+428 silly extract readable-stream@1.0.34
+429 silly extract through2@0.6.5
+430 silly extract vinyl@0.4.6
+431 silly extract vinyl-fs@0.3.14
+432 silly extract gulp@3.9.1
+433 verbose unbuild node_modules/.staging/minimist-98395d83
+434 verbose unbuild node_modules/.staging/clone-11fbccdf
+435 verbose unbuild node_modules/.staging/readable-stream-e68ac8e0
+436 verbose unbuild node_modules/.staging/through2-5efd927b
+437 verbose unbuild node_modules/.staging/vinyl-eb21fda0
+438 verbose unbuild node_modules/.staging/vinyl-fs-8a9366b0
+439 verbose unbuild node_modules/.staging/mkdirp-2c47279b
+440 verbose unbuild node_modules/.staging/gulp-cb756b24
+441 silly gentlyRm /home/raounak/node_modules/.staging/minimist-98395d83 is being purged from base /home/raounak
+442 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/minimist-98395d83
+443 silly gentlyRm /home/raounak/node_modules/.staging/readable-stream-e68ac8e0 is being purged from base /home/raounak
+444 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/readable-stream-e68ac8e0
+445 silly gentlyRm /home/raounak/node_modules/.staging/through2-5efd927b is being purged from base /home/raounak
+446 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/through2-5efd927b
+447 silly gentlyRm /home/raounak/node_modules/.staging/vinyl-eb21fda0 is being purged from base /home/raounak
+448 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/vinyl-eb21fda0
+449 silly gentlyRm /home/raounak/node_modules/.staging/clone-11fbccdf is being purged from base /home/raounak
+450 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/clone-11fbccdf
+451 silly gentlyRm /home/raounak/node_modules/.staging/vinyl-fs-8a9366b0 is being purged from base /home/raounak
+452 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/vinyl-fs-8a9366b0
+453 silly gentlyRm /home/raounak/node_modules/.staging/mkdirp-2c47279b is being purged from base /home/raounak
+454 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/mkdirp-2c47279b
+455 verbose tar unpack /home/raounak/.npm/minimist/0.0.8/package.tgz
+456 verbose tar unpacking to /home/raounak/node_modules/.staging/minimist-98395d83
+457 silly gentlyRm /home/raounak/node_modules/.staging/minimist-98395d83 is being purged
+458 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/minimist-98395d83
+459 verbose tar unpack /home/raounak/.npm/readable-stream/1.0.34/package.tgz
+460 verbose tar unpacking to /home/raounak/node_modules/.staging/readable-stream-e68ac8e0
+461 silly gentlyRm /home/raounak/node_modules/.staging/readable-stream-e68ac8e0 is being purged
+462 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/readable-stream-e68ac8e0
+463 verbose tar unpack /home/raounak/.npm/through2/0.6.5/package.tgz
+464 verbose tar unpacking to /home/raounak/node_modules/.staging/through2-5efd927b
+465 silly gentlyRm /home/raounak/node_modules/.staging/through2-5efd927b is being purged
+466 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/through2-5efd927b
+467 verbose tar unpack /home/raounak/.npm/vinyl/0.4.6/package.tgz
+468 verbose tar unpacking to /home/raounak/node_modules/.staging/vinyl-eb21fda0
+469 silly gentlyRm /home/raounak/node_modules/.staging/vinyl-eb21fda0 is being purged
+470 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/vinyl-eb21fda0
+471 verbose tar unpack /home/raounak/.npm/clone/0.2.0/package.tgz
+472 verbose tar unpacking to /home/raounak/node_modules/.staging/clone-11fbccdf
+473 silly gentlyRm /home/raounak/node_modules/.staging/clone-11fbccdf is being purged
+474 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/clone-11fbccdf
+475 verbose tar unpack /home/raounak/.npm/vinyl-fs/0.3.14/package.tgz
+476 verbose tar unpacking to /home/raounak/node_modules/.staging/vinyl-fs-8a9366b0
+477 silly gentlyRm /home/raounak/node_modules/.staging/vinyl-fs-8a9366b0 is being purged
+478 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/vinyl-fs-8a9366b0
+479 silly gentlyRm /home/raounak/node_modules/.staging/gulp-cb756b24 is being purged from base /home/raounak
+480 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/gulp-cb756b24
+481 verbose tar unpack /home/raounak/.npm/mkdirp/0.5.1/package.tgz
+482 verbose tar unpacking to /home/raounak/node_modules/.staging/mkdirp-2c47279b
+483 silly gentlyRm /home/raounak/node_modules/.staging/mkdirp-2c47279b is being purged
+484 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/mkdirp-2c47279b
+485 silly gunzTarPerm modes [ '775', '664' ]
+486 silly gunzTarPerm modes [ '775', '664' ]
+487 silly gunzTarPerm modes [ '775', '664' ]
+488 silly gunzTarPerm modes [ '775', '664' ]
+489 silly gunzTarPerm modes [ '775', '664' ]
+490 silly gunzTarPerm modes [ '775', '664' ]
+491 verbose tar unpack /home/raounak/.npm/gulp/3.9.1/package.tgz
+492 verbose tar unpacking to /home/raounak/node_modules/.staging/gulp-cb756b24
+493 silly gentlyRm /home/raounak/node_modules/.staging/gulp-cb756b24 is being purged
+494 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/gulp-cb756b24
+495 silly gunzTarPerm modes [ '775', '664' ]
+496 silly gunzTarPerm modes [ '775', '664' ]
+497 silly gunzTarPerm extractEntry package.json
+498 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+499 silly gunzTarPerm extractEntry package.json
+500 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+501 silly gunzTarPerm extractEntry package.json
+502 silly gunzTarPerm extractEntry package.json
+503 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+504 silly gunzTarPerm extractEntry package.json
+505 silly gunzTarPerm modified mode [ 'package.json', 438, 436 ]
+506 silly gunzTarPerm extractEntry package.json
+507 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+508 silly gunzTarPerm extractEntry package.json
+509 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+510 silly gunzTarPerm extractEntry package.json
+511 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+512 silly gunzTarPerm extractEntry LICENSE
+513 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+514 silly gunzTarPerm extractEntry index.js
+515 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+516 silly gunzTarPerm extractEntry .npmignore
+517 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+518 silly gunzTarPerm extractEntry README.md
+519 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+520 silly gunzTarPerm extractEntry README.md
+521 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+522 silly gunzTarPerm extractEntry LICENSE
+523 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+524 silly gunzTarPerm extractEntry .npmignore
+525 silly gunzTarPerm extractEntry README.md
+526 silly gunzTarPerm extractEntry .npmignore
+527 silly gunzTarPerm modified mode [ '.npmignore', 438, 436 ]
+528 silly gunzTarPerm extractEntry README.md
+529 silly gunzTarPerm modified mode [ 'README.md', 438, 436 ]
+530 silly gunzTarPerm extractEntry README.md
+531 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+532 silly gunzTarPerm extractEntry LICENSE
+533 silly gunzTarPerm modified mode [ 'LICENSE', 493, 509 ]
+534 silly gunzTarPerm extractEntry LICENSE
+535 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+536 silly gunzTarPerm extractEntry index.js
+537 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+538 silly gunzTarPerm extractEntry README.md
+539 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+540 silly gunzTarPerm extractEntry LICENSE
+541 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+542 silly gunzTarPerm extractEntry .travis.yml
+543 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+544 silly gunzTarPerm extractEntry example/parse.js
+545 silly gunzTarPerm modified mode [ 'example/parse.js', 420, 436 ]
+546 silly gunzTarPerm extractEntry LICENSE
+547 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+548 silly gunzTarPerm extractEntry duplex.js
+549 silly gunzTarPerm modified mode [ 'duplex.js', 420, 436 ]
+550 silly gunzTarPerm extractEntry LICENSE
+551 silly gunzTarPerm modified mode [ 'LICENSE', 438, 436 ]
+552 silly gunzTarPerm extractEntry clone.js
+553 silly gunzTarPerm modified mode [ 'clone.js', 438, 436 ]
+554 silly gunzTarPerm extractEntry LICENSE
+555 silly gunzTarPerm extractEntry through2.js
+556 silly gunzTarPerm extractEntry index.js
+557 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+558 silly gunzTarPerm extractEntry lib/cloneBuffer.js
+559 silly gunzTarPerm modified mode [ 'lib/cloneBuffer.js', 420, 436 ]
+560 silly gunzTarPerm extractEntry index.js
+561 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+562 silly gunzTarPerm extractEntry lib/dest/index.js
+563 silly gunzTarPerm modified mode [ 'lib/dest/index.js', 420, 436 ]
+564 silly gunzTarPerm extractEntry .travis.yml
+565 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+566 silly gunzTarPerm extractEntry bin/cmd.js
+567 silly gunzTarPerm modified mode [ 'bin/cmd.js', 493, 509 ]
+568 silly gunzTarPerm extractEntry index.js
+569 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+570 silly gunzTarPerm extractEntry CHANGELOG.md
+571 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 436 ]
+572 silly gunzTarPerm extractEntry writable.js
+573 silly gunzTarPerm modified mode [ 'writable.js', 420, 436 ]
+574 silly gunzTarPerm extractEntry passthrough.js
+575 silly gunzTarPerm modified mode [ 'passthrough.js', 420, 436 ]
+576 silly gunzTarPerm extractEntry test.js
+577 silly gunzTarPerm modified mode [ 'test.js', 438, 436 ]
+578 silly gunzTarPerm extractEntry .travis.yml
+579 silly gunzTarPerm modified mode [ '.travis.yml', 438, 436 ]
+580 silly gunzTarPerm extractEntry readme.markdown
+581 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 436 ]
+582 silly gunzTarPerm extractEntry test/dash.js
+583 silly gunzTarPerm modified mode [ 'test/dash.js', 420, 436 ]
+584 silly gunzTarPerm extractEntry lib/inspectStream.js
+585 silly gunzTarPerm modified mode [ 'lib/inspectStream.js', 420, 436 ]
+586 silly gunzTarPerm extractEntry lib/isBuffer.js
+587 silly gunzTarPerm modified mode [ 'lib/isBuffer.js', 420, 436 ]
+588 silly gunzTarPerm extractEntry lib/dest/writeContents/index.js
+589 silly gunzTarPerm modified mode [ 'lib/dest/writeContents/index.js', 420, 436 ]
+590 silly gunzTarPerm extractEntry lib/dest/writeContents/writeBuffer.js
+591 silly gunzTarPerm modified mode [ 'lib/dest/writeContents/writeBuffer.js', 420, 436 ]
+592 silly gunzTarPerm extractEntry bin/usage.txt
+593 silly gunzTarPerm modified mode [ 'bin/usage.txt', 420, 436 ]
+594 silly gunzTarPerm extractEntry examples/pow.js
+595 silly gunzTarPerm modified mode [ 'examples/pow.js', 420, 436 ]
+596 silly gunzTarPerm extractEntry bin/gulp.js
+597 silly gunzTarPerm modified mode [ 'bin/gulp.js', 493, 509 ]
+598 silly gunzTarPerm extractEntry readable.js
+599 silly gunzTarPerm modified mode [ 'readable.js', 420, 436 ]
+600 silly gunzTarPerm extractEntry transform.js
+601 silly gunzTarPerm modified mode [ 'transform.js', 420, 436 ]
+602 silly gunzTarPerm extractEntry lib/dest/writeContents/writeDir.js
+603 silly gunzTarPerm modified mode [ 'lib/dest/writeContents/writeDir.js', 420, 436 ]
+604 silly gunzTarPerm extractEntry lib/dest/writeContents/writeStream.js
+605 silly gunzTarPerm modified mode [ 'lib/dest/writeContents/writeStream.js', 420, 436 ]
+606 silly gunzTarPerm extractEntry test/default_bool.js
+607 silly gunzTarPerm modified mode [ 'test/default_bool.js', 420, 436 ]
+608 silly gunzTarPerm extractEntry test/dotted.js
+609 silly gunzTarPerm modified mode [ 'test/dotted.js', 420, 436 ]
+610 silly gunzTarPerm extractEntry test/long.js
+611 silly gunzTarPerm modified mode [ 'test/long.js', 420, 436 ]
+612 silly gunzTarPerm extractEntry test/parse.js
+613 silly gunzTarPerm modified mode [ 'test/parse.js', 420, 436 ]
+614 silly gunzTarPerm extractEntry test/parse_modified.js
+615 silly gunzTarPerm modified mode [ 'test/parse_modified.js', 420, 436 ]
+616 silly gunzTarPerm extractEntry test/short.js
+617 silly gunzTarPerm modified mode [ 'test/short.js', 420, 436 ]
+618 silly gunzTarPerm extractEntry test/whitespace.js
+619 silly gunzTarPerm modified mode [ 'test/whitespace.js', 420, 436 ]
+620 silly gunzTarPerm extractEntry readme.markdown
+621 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 436 ]
+622 silly gunzTarPerm extractEntry test/chmod.js
+623 silly gunzTarPerm modified mode [ 'test/chmod.js', 420, 436 ]
+624 silly gunzTarPerm extractEntry lib/isNull.js
+625 silly gunzTarPerm modified mode [ 'lib/isNull.js', 420, 436 ]
+626 silly gunzTarPerm extractEntry lib/isStream.js
+627 silly gunzTarPerm modified mode [ 'lib/isStream.js', 420, 436 ]
+628 silly gunzTarPerm extractEntry completion/README.md
+629 silly gunzTarPerm modified mode [ 'completion/README.md', 420, 436 ]
+630 silly gunzTarPerm extractEntry completion/bash
+631 silly gunzTarPerm modified mode [ 'completion/bash', 420, 436 ]
+632 silly gunzTarPerm extractEntry test/opts_fs_sync.js
+633 silly gunzTarPerm modified mode [ 'test/opts_fs_sync.js', 420, 436 ]
+634 silly gunzTarPerm extractEntry lib/_stream_duplex.js
+635 silly gunzTarPerm modified mode [ 'lib/_stream_duplex.js', 420, 436 ]
+636 silly gunzTarPerm extractEntry lib/_stream_passthrough.js
+637 silly gunzTarPerm modified mode [ 'lib/_stream_passthrough.js', 420, 436 ]
+638 silly gunzTarPerm extractEntry lib/src/getStats.js
+639 silly gunzTarPerm modified mode [ 'lib/src/getStats.js', 420, 436 ]
+640 silly gunzTarPerm extractEntry completion/fish
+641 silly gunzTarPerm modified mode [ 'completion/fish', 420, 436 ]
+642 silly gunzTarPerm extractEntry completion/powershell
+643 silly gunzTarPerm modified mode [ 'completion/powershell', 420, 436 ]
+644 silly gunzTarPerm extractEntry lib/_stream_readable.js
+645 silly gunzTarPerm modified mode [ 'lib/_stream_readable.js', 420, 436 ]
+646 silly gunzTarPerm extractEntry test/perm.js
+647 silly gunzTarPerm modified mode [ 'test/perm.js', 420, 436 ]
+648 silly gunzTarPerm extractEntry test/perm_sync.js
+649 silly gunzTarPerm modified mode [ 'test/perm_sync.js', 420, 436 ]
+650 silly gunzTarPerm extractEntry completion/zsh
+651 silly gunzTarPerm modified mode [ 'completion/zsh', 420, 436 ]
+652 silly gunzTarPerm extractEntry gulp.1
+653 silly gunzTarPerm modified mode [ 'gulp.1', 420, 436 ]
+654 silly gunzTarPerm extractEntry lib/src/index.js
+655 silly gunzTarPerm modified mode [ 'lib/src/index.js', 420, 436 ]
+656 silly gunzTarPerm extractEntry lib/src/getContents/bufferFile.js
+657 silly gunzTarPerm modified mode [ 'lib/src/getContents/bufferFile.js', 420, 436 ]
+658 silly gunzTarPerm extractEntry lib/_stream_transform.js
+659 silly gunzTarPerm modified mode [ 'lib/_stream_transform.js', 420, 436 ]
+660 silly gunzTarPerm extractEntry lib/_stream_writable.js
+661 silly gunzTarPerm modified mode [ 'lib/_stream_writable.js', 420, 436 ]
+662 silly gunzTarPerm extractEntry test/opts_fs.js
+663 silly gunzTarPerm modified mode [ 'test/opts_fs.js', 420, 436 ]
+664 silly gunzTarPerm extractEntry test/rel.js
+665 silly gunzTarPerm modified mode [ 'test/rel.js', 420, 436 ]
+666 silly gunzTarPerm extractEntry lib/completion.js
+667 silly gunzTarPerm modified mode [ 'lib/completion.js', 420, 436 ]
+668 silly gunzTarPerm extractEntry lib/taskTree.js
+669 silly gunzTarPerm modified mode [ 'lib/taskTree.js', 420, 436 ]
+670 silly gentlyRm /home/raounak/node_modules/.staging/through2-5efd927b/node_modules is being purged
+671 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/through2-5efd927b/node_modules
+672 silly gunzTarPerm extractEntry lib/src/getContents/index.js
+673 silly gunzTarPerm modified mode [ 'lib/src/getContents/index.js', 420, 436 ]
+674 silly gunzTarPerm extractEntry lib/src/getContents/readDir.js
+675 silly gunzTarPerm modified mode [ 'lib/src/getContents/readDir.js', 420, 436 ]
+676 silly gunzTarPerm extractEntry test/return.js
+677 silly gunzTarPerm modified mode [ 'test/return.js', 420, 436 ]
+678 silly gunzTarPerm extractEntry test/return_sync.js
+679 silly gunzTarPerm modified mode [ 'test/return_sync.js', 420, 436 ]
+680 silly gunzTarPerm extractEntry lib/src/getContents/streamFile.js
+681 silly gunzTarPerm modified mode [ 'lib/src/getContents/streamFile.js', 420, 436 ]
+682 silly gunzTarPerm extractEntry test/root.js
+683 silly gunzTarPerm modified mode [ 'test/root.js', 420, 436 ]
+684 silly gunzTarPerm extractEntry test/sync.js
+685 silly gunzTarPerm modified mode [ 'test/sync.js', 420, 436 ]
+686 silly gentlyRm /home/raounak/node_modules/.staging/clone-11fbccdf/node_modules is being purged
+687 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/clone-11fbccdf/node_modules
+688 silly gunzTarPerm extractEntry test/mkdirp.js
+689 silly gunzTarPerm modified mode [ 'test/mkdirp.js', 420, 436 ]
+690 silly gunzTarPerm extractEntry test/umask.js
+691 silly gunzTarPerm modified mode [ 'test/umask.js', 420, 436 ]
+692 silly gunzTarPerm extractEntry test/clobber.js
+693 silly gunzTarPerm modified mode [ 'test/clobber.js', 420, 436 ]
+694 silly gunzTarPerm extractEntry test/umask_sync.js
+695 silly gunzTarPerm modified mode [ 'test/umask_sync.js', 420, 436 ]
+696 silly gentlyRm /home/raounak/node_modules/.staging/vinyl-eb21fda0/node_modules is being purged
+697 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/vinyl-eb21fda0/node_modules
+698 silly gunzTarPerm extractEntry test/race.js
+699 silly gunzTarPerm modified mode [ 'test/race.js', 420, 436 ]
+700 silly gentlyRm /home/raounak/node_modules/.staging/minimist-98395d83/node_modules is being purged
+701 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/minimist-98395d83/node_modules
+702 silly gentlyRm /home/raounak/node_modules/.staging/readable-stream-e68ac8e0/node_modules is being purged
+703 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/readable-stream-e68ac8e0/node_modules
+704 silly gentlyRm /home/raounak/node_modules/.staging/gulp-cb756b24/node_modules is being purged
+705 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/gulp-cb756b24/node_modules
+706 silly gentlyRm /home/raounak/node_modules/.staging/vinyl-fs-8a9366b0/node_modules is being purged
+707 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/vinyl-fs-8a9366b0/node_modules
+708 silly gentlyRm /home/raounak/node_modules/.staging/mkdirp-2c47279b/node_modules is being purged
+709 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.staging/mkdirp-2c47279b/node_modules
+710 silly doParallel preinstall 8
+711 silly preinstall minimist@0.0.8
+712 info lifecycle minimist@0.0.8~preinstall: minimist@0.0.8
+713 silly preinstall mkdirp@0.5.1
+714 info lifecycle mkdirp@0.5.1~preinstall: mkdirp@0.5.1
+715 silly preinstall clone@0.2.0
+716 info lifecycle clone@0.2.0~preinstall: clone@0.2.0
+717 silly preinstall readable-stream@1.0.34
+718 info lifecycle readable-stream@1.0.34~preinstall: readable-stream@1.0.34
+719 silly preinstall through2@0.6.5
+720 info lifecycle through2@0.6.5~preinstall: through2@0.6.5
+721 silly preinstall vinyl@0.4.6
+722 info lifecycle vinyl@0.4.6~preinstall: vinyl@0.4.6
+723 silly preinstall vinyl-fs@0.3.14
+724 info lifecycle vinyl-fs@0.3.14~preinstall: vinyl-fs@0.3.14
+725 silly preinstall gulp@3.9.1
+726 info lifecycle gulp@3.9.1~preinstall: gulp@3.9.1
+727 silly lifecycle minimist@0.0.8~preinstall: no script for preinstall, continuing
+728 silly lifecycle mkdirp@0.5.1~preinstall: no script for preinstall, continuing
+729 silly lifecycle clone@0.2.0~preinstall: no script for preinstall, continuing
+730 silly lifecycle readable-stream@1.0.34~preinstall: no script for preinstall, continuing
+731 silly lifecycle through2@0.6.5~preinstall: no script for preinstall, continuing
+732 silly lifecycle vinyl@0.4.6~preinstall: no script for preinstall, continuing
+733 silly lifecycle vinyl-fs@0.3.14~preinstall: no script for preinstall, continuing
+734 silly lifecycle gulp@3.9.1~preinstall: no script for preinstall, continuing
+735 silly doReverseSerial remove 0
+736 silly doSerial move 0
+737 silly doSerial finalize 8
+738 silly finalize /home/raounak/node_modules/mkdirp/node_modules/minimist
+739 silly finalize /home/raounak/node_modules/mkdirp
+740 silly finalize /home/raounak/node_modules/vinyl-fs/node_modules/clone
+741 silly finalize /home/raounak/node_modules/vinyl-fs/node_modules/readable-stream
+742 silly finalize /home/raounak/node_modules/vinyl-fs/node_modules/through2
+743 silly finalize /home/raounak/node_modules/vinyl-fs/node_modules/vinyl
+744 silly finalize /home/raounak/node_modules/vinyl-fs
+745 silly finalize /home/raounak/node_modules/gulp
+746 silly doSerial build 8
+747 silly build minimist@0.0.8
+748 info linkStuff minimist@0.0.8
+749 silly linkStuff minimist@0.0.8 has /home/raounak/node_modules/mkdirp/node_modules as its parent node_modules
+750 verbose linkBins minimist@0.0.8
+751 verbose linkMans minimist@0.0.8
+752 silly build mkdirp@0.5.1
+753 info linkStuff mkdirp@0.5.1
+754 silly linkStuff mkdirp@0.5.1 has /home/raounak/node_modules as its parent node_modules
+755 verbose linkBins mkdirp@0.5.1
+756 verbose linkBins [ { mkdirp: 'bin/cmd.js' },
+756 verbose linkBins   '/home/raounak/node_modules/.bin',
+756 verbose linkBins   false ]
+757 verbose linkMans mkdirp@0.5.1
+758 silly gentlyRm /home/raounak/node_modules/.bin/mkdirp is being purged
+759 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/.bin/mkdirp
+760 verbose unlock done using /home/raounak/.npm/_locks/staging-b8be4bb348a6ed59.lock for /home/raounak/node_modules/.staging
+761 silly rollbackFailedOptional Starting
+762 silly gentlyRm /home/raounak/node_modules/mkdirp/node_modules/minimist is being purged from base /home/raounak
+763 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/mkdirp/node_modules/minimist
+764 silly gentlyRm /home/raounak/node_modules/mkdirp/node_modules/minimist is being purged from base /home/raounak
+765 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/mkdirp/node_modules/minimist
+766 silly gentlyRm /home/raounak/node_modules/mkdirp/node_modules/minimist is being purged from base /home/raounak
+767 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/mkdirp/node_modules/minimist
+768 silly gentlyRm /home/raounak/node_modules/mkdirp/node_modules/minimist is being purged from base /home/raounak
+769 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/mkdirp/node_modules/minimist
+770 silly gentlyRm /home/raounak/node_modules/mkdirp/node_modules/minimist is being purged from base /home/raounak
+771 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/mkdirp/node_modules/minimist
+772 silly gentlyRm /home/raounak/node_modules/mkdirp/node_modules/minimist is being purged from base /home/raounak
+773 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/mkdirp/node_modules/minimist
+774 silly gentlyRm /home/raounak/node_modules/mkdirp/node_modules/minimist is being purged from base /home/raounak
+775 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/mkdirp/node_modules/minimist
+776 silly gentlyRm /home/raounak/node_modules/mkdirp/node_modules/minimist is being purged from base /home/raounak
+777 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/mkdirp/node_modules/minimist
+778 silly gentlyRm /home/raounak/node_modules/mkdirp is being purged from base /home/raounak
+779 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/mkdirp
+780 silly gentlyRm /home/raounak/node_modules/mkdirp is being purged from base /home/raounak
+781 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/mkdirp
+782 silly gentlyRm /home/raounak/node_modules/mkdirp is being purged from base /home/raounak
+783 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/mkdirp
+784 silly gentlyRm /home/raounak/node_modules/mkdirp is being purged from base /home/raounak
+785 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/mkdirp
+786 silly gentlyRm /home/raounak/node_modules/mkdirp is being purged from base /home/raounak
+787 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/mkdirp
+788 silly gentlyRm /home/raounak/node_modules/mkdirp is being purged from base /home/raounak
+789 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/mkdirp
+790 silly gentlyRm /home/raounak/node_modules/mkdirp is being purged from base /home/raounak
+791 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/mkdirp
+792 silly gentlyRm /home/raounak/node_modules/mkdirp is being purged from base /home/raounak
+793 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/mkdirp
+794 silly gentlyRm /home/raounak/node_modules/vinyl-fs is being purged from base /home/raounak
+795 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/vinyl-fs
+796 silly gentlyRm /home/raounak/node_modules/vinyl-fs is being purged from base /home/raounak
+797 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/vinyl-fs
+798 silly gentlyRm /home/raounak/node_modules/vinyl-fs is being purged from base /home/raounak
+799 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/vinyl-fs
+800 silly gentlyRm /home/raounak/node_modules/vinyl-fs is being purged from base /home/raounak
+801 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/vinyl-fs
+802 silly gentlyRm /home/raounak/node_modules/vinyl-fs is being purged from base /home/raounak
+803 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/vinyl-fs
+804 silly gentlyRm /home/raounak/node_modules/vinyl-fs is being purged from base /home/raounak
+805 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/vinyl-fs
+806 silly gentlyRm /home/raounak/node_modules/vinyl-fs is being purged from base /home/raounak
+807 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/vinyl-fs
+808 silly gentlyRm /home/raounak/node_modules/vinyl-fs is being purged from base /home/raounak
+809 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/vinyl-fs
+810 silly gentlyRm /home/raounak/node_modules/gulp is being purged from base /home/raounak
+811 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/gulp
+812 silly gentlyRm /home/raounak/node_modules/gulp is being purged from base /home/raounak
+813 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/gulp
+814 silly gentlyRm /home/raounak/node_modules/gulp is being purged from base /home/raounak
+815 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/gulp
+816 silly gentlyRm /home/raounak/node_modules/gulp is being purged from base /home/raounak
+817 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/gulp
+818 silly gentlyRm /home/raounak/node_modules/gulp is being purged from base /home/raounak
+819 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/gulp
+820 silly gentlyRm /home/raounak/node_modules/gulp is being purged from base /home/raounak
+821 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/gulp
+822 silly gentlyRm /home/raounak/node_modules/gulp is being purged from base /home/raounak
+823 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/gulp
+824 silly gentlyRm /home/raounak/node_modules/gulp is being purged from base /home/raounak
+825 verbose gentlyRm don't care about contents; nuking /home/raounak/node_modules/gulp
+826 silly vacuum-fs purging /home/raounak/node_modules/mkdirp/node_modules/minimist
+827 silly vacuum-fs purging /home/raounak/node_modules/mkdirp/node_modules/minimist
+828 silly vacuum-fs purging /home/raounak/node_modules/mkdirp/node_modules/minimist
+829 silly vacuum-fs purging /home/raounak/node_modules/mkdirp/node_modules/minimist
+830 silly vacuum-fs purging /home/raounak/node_modules/mkdirp/node_modules/minimist
+831 silly vacuum-fs purging /home/raounak/node_modules/mkdirp/node_modules/minimist
+832 silly vacuum-fs purging /home/raounak/node_modules/mkdirp/node_modules/minimist
+833 silly vacuum-fs purging /home/raounak/node_modules/mkdirp/node_modules/minimist
+834 silly vacuum-fs purging /home/raounak/node_modules/mkdirp
+835 silly vacuum-fs purging /home/raounak/node_modules/mkdirp
+836 silly vacuum-fs purging /home/raounak/node_modules/mkdirp
+837 silly vacuum-fs purging /home/raounak/node_modules/mkdirp
+838 silly vacuum-fs purging /home/raounak/node_modules/mkdirp
+839 silly vacuum-fs purging /home/raounak/node_modules/mkdirp
+840 silly vacuum-fs purging /home/raounak/node_modules/mkdirp
+841 silly vacuum-fs purging /home/raounak/node_modules/mkdirp
+842 silly vacuum-fs purging /home/raounak/node_modules/vinyl-fs
+843 silly vacuum-fs purging /home/raounak/node_modules/vinyl-fs
+844 silly vacuum-fs purging /home/raounak/node_modules/vinyl-fs
+845 silly vacuum-fs purging /home/raounak/node_modules/vinyl-fs
+846 silly vacuum-fs purging /home/raounak/node_modules/vinyl-fs
+847 silly vacuum-fs purging /home/raounak/node_modules/vinyl-fs
+848 silly vacuum-fs purging /home/raounak/node_modules/vinyl-fs
+849 silly vacuum-fs purging /home/raounak/node_modules/vinyl-fs
+850 silly vacuum-fs purging /home/raounak/node_modules/gulp
+851 silly vacuum-fs purging /home/raounak/node_modules/gulp
+852 silly vacuum-fs purging /home/raounak/node_modules/gulp
+853 silly vacuum-fs purging /home/raounak/node_modules/gulp
+854 silly vacuum-fs purging /home/raounak/node_modules/gulp
+855 silly vacuum-fs purging /home/raounak/node_modules/gulp
+856 silly vacuum-fs purging /home/raounak/node_modules/gulp
+857 silly vacuum-fs purging /home/raounak/node_modules/gulp
+858 silly vacuum-fs removing /home/raounak/node_modules/mkdirp/node_modules
+859 silly vacuum-fs removing /home/raounak/node_modules/mkdirp/node_modules
+860 silly vacuum-fs removing /home/raounak/node_modules/mkdirp/node_modules
+861 silly vacuum-fs removing /home/raounak/node_modules/mkdirp/node_modules
+862 silly vacuum-fs removing /home/raounak/node_modules/mkdirp/node_modules
+863 silly vacuum-fs removing /home/raounak/node_modules/mkdirp/node_modules
+864 silly vacuum-fs removing /home/raounak/node_modules/mkdirp/node_modules
+865 silly vacuum-fs removing /home/raounak/node_modules/mkdirp/node_modules
+866 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+867 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+868 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+869 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+870 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+871 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+872 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+873 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+874 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+875 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+876 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+877 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+878 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+879 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+880 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+881 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+882 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+883 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+884 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+885 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+886 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+887 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+888 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+889 silly vacuum-fs quitting because other entries in /home/raounak/node_modules
+890 silly rollbackFailedOptional Finishing
+891 silly runTopLevelLifecycles Finishing
+892 silly install printInstalled
+893 warn enoent ENOENT: no such file or directory, open '/home/raounak/package.json'
+894 verbose enoent ENOENT: no such file or directory, open '/home/raounak/package.json'
+894 verbose enoent This is most likely not a problem with npm itself
+894 verbose enoent and is related to npm not being able to find a file.
+895 warn raounak No description
+896 verbose If you need help, you may report this error at:
+896 verbose     <https://github.com/npm/npm/issues>
+897 warn raounak No repository field.
+898 verbose If you need help, you may report this error at:
+898 verbose     <https://github.com/npm/npm/issues>
+899 warn raounak No README data
+900 verbose If you need help, you may report this error at:
+900 verbose     <https://github.com/npm/npm/issues>
+901 warn raounak No license field.
+902 verbose If you need help, you may report this error at:
+902 verbose     <https://github.com/npm/npm/issues>
+903 verbose stack Error: EACCES: permission denied, symlink '../mkdirp/bin/cmd.js' -> '/home/raounak/node_modules/.bin/mkdirp'
+904 verbose cwd /home/raounak/Desktop/hackDTU
+905 error Linux 4.4.0-62-generic
+906 error argv "/usr/bin/nodejs" "/usr/local/bin/npm" "install" "gulp"
+907 error node v7.5.0
+908 error npm  v4.0.5
+909 error path ../mkdirp/bin/cmd.js
+910 error code EACCES
+911 error errno -13
+912 error syscall symlink
+913 error Error: EACCES: permission denied, symlink '../mkdirp/bin/cmd.js' -> '/home/raounak/node_modules/.bin/mkdirp'
+913 error  { Error: EACCES: permission denied, symlink '../mkdirp/bin/cmd.js' -> '/home/raounak/node_modules/.bin/mkdirp'
+913 error   errno: -13,
+913 error   code: 'EACCES',
+913 error   syscall: 'symlink',
+913 error   path: '../mkdirp/bin/cmd.js',
+913 error   dest: '/home/raounak/node_modules/.bin/mkdirp' }
+914 error Please try running this command again as root/Administrator.
+915 verbose exit [ -13, true ]
