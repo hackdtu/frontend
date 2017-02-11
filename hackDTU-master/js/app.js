@@ -21,16 +21,25 @@
                 .primaryPalette('grey');
         })
         .config(function($stateProvider, $urlRouterProvider) {
-            $urlRouterProvider.otherwise('/home');
+            $urlRouterProvider.otherwise('/');
 
             $stateProvider
 
 
             // HOME STATES AND NESTED VIEWS ========================================
-                .state('home', {
-                url: '/home',
-                templateUrl: './view/account.html'
-            })
+
+                .state('splash',{
+                    url: '/',
+                    templateUrl: './view/splash.html'
+                })
+                .state('doctor',{
+                    url: '/doctor',
+                    templateUrl: './view/doctor.html'
+                })
+                .state('home',{
+                    url: '/home',
+                    templateUrl: './view/account.html'
+                })
 
             .state('filledUpForm', {
                 url: '/filledUpForm',
@@ -114,40 +123,6 @@
                     templateUrl: './view/extension.html'
                 });
 
-            /*
-            $routeProvider
-                .when('/',{
-                    templateUrl: './view/account.html'
-                })
-                .when('/contacts',{
-                    templateUrl: './view/contacts.html',
-                    controller: function () {
-                    },
-                    controllerAs: 'ct'
-                })
-                .when('/assignment',{
-                    templateUrl: './view/assignment.html'
-                })
-                .when('/backup', {
-                    templateUrl: './view/backup.html'
-                })
-                .when('/bookmark', {
-                    templateUrl: './view/bookmark.html'
-                })
-                .when('/description',{
-                    templateUrl: './view/description.html'
-                })
-                .when('/dialog',{
-                    templateUrl: './view/dialog.html'
-                })
-                .when('/dns',{
-                    templateUrl: './view/dns.html'
-                })
-                .when('/extension',{
-                    templateUrl: './view/extension.html'
-                })
-                .otherwise('/');
-                */
         })
         .filter('startsWithLetter', function() {
             return function(items, letter) {

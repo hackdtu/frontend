@@ -2,26 +2,28 @@
     <div class="inset" hide-sm></div>
     <div layout="row" layout-align="center center">
         <div flex="90" flex-gt-md="80" style="margin-bottom: 100px;">
-          
+        
             <md-button class="md-icon-button" ng-href="#filledUpForm" class="md-raised md-warn" style="width: 60px;">
                 <md-icon><i class="material-icons">add</i></md-icon>
             </md-button>
            
             <div flex>
-                <md-list>
+                <md-list ng-repeat="kind in kindof">
                     <md-subheader style="margin-top: 10px;" layout="row" layout-align="center end">
                         <div flex layout="column" layout-align="start center" layout-fill>
-                            <md-button style="margin: 0px; width: 150px;" aria-label="Today" class="md-raised md-primary"></md-button>
+                            <md-button style="margin: 0px; width: 150px;" aria-label="Today" class="md-raised md-primary">{{kind}}</md-button>
                             <div class="vertical-divider"></div>
                         </div>
-            
                     </md-subheader>
-                    <md-list-item ng-repeat="greet in greeting">
-                        <div flex>
-                                <h4 style="margin: 0px;" layout-fill><span flex></span>Duration was : {{greet.duration }} min</h4>
-                                <p style="margin: 0px;" layout-fill>You took : {{greet.medicine}}</p>
-                                <h5 style="margin: 0px;" layout-fill>Severity : {{greet.severity}}</h5>                          
-                        </div>
+                    <md-list-item layout="column" ng-if="greet.typeof == kind" ng-repeat="greet in greeting">
+                            <md-card>
+                                <div style="justify-content: center;align-items: center;">
+                                            <h4 style="margin: 0px;"><span flex></span>Duration was : {{greet.duration }} min</h4>
+                                <p style="margin: 0px;">You took : {{greet.medicine}}</p>
+                                <h5 style="margin: 0px;">Severity : {{greet.severity}}</h5>
+                                </div>
+                             </md-card>
+                                             
                     </md-list-item>
                 </md-list>
             </div>

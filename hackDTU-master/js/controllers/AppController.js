@@ -13,6 +13,13 @@
                     alert(response.status);
 
                 });
+                $scope.kindof = [];
+            $http.get("http://178.62.41.110:88/category?uid=1234")
+                .then(function(response){
+                    $scope.kindof = response.data;
+                },function(response){
+                    alert(response.status);
+                });
 
 
 

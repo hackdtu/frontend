@@ -32,22 +32,17 @@
             <md-button style="margin-left: 10px;" class="padMarg0" ng-hide="showButton" aria-label="menu" ng-click="toggleIcons()">
                 <md-icon md-font-set="md">menu</md-icon>
             </md-button>
-            <md-button style="margin-left: 10px;" class="padMarg0 makingWidthSmall" ng-show="showButton" aria-label="menu" ng-click="toggleLeft()">
-                <md-icon md-font-set="md">menu</md-icon>
+            <md-button style="margin-left: 10px;" ng-click="toggleLeft()">
+                <img style="border-radius: 50%; width: 44px; height: 44px;" src="img/logo.jpg" />
             </md-button>
+      
             <span flex="3" gt-md></span>
-            <h3 style="color: white;">Dashboard</h3>
+            <h3 style="color: white;">Health Bub</h3>
             <span flex></span>
             <!-- Second tour Element -->
             <md-button tour-step tour-step-title="Step 1" tour-step-content="<div>Here you can see your all activity</div><button id='info'>info</button>" tour-step-order="0" tour-step-placement="bottom" class="makingWidthSmall" aria-label="search" ng-click="tbc.toggleSearch()"
                 data-step="2" data-intro="Second tip">
                 <md-icon md-font-set="md">search</md-icon>
-            </md-button>
-            <md-button class="makingWidthSmall" aria-label="search" id="completeBtn" ng-click="tour.start()">
-                <md-icon md-font-set="md">first_page</md-icon>
-            </md-button>
-            <md-button class="makingWidthSmall" aria-label="search" id="activityBoxBtn">
-                <md-icon md-font-set="md">last_page</md-icon>
             </md-button>
             <md-menu>
                 <md-button ng-click="$mdOpenMenu($event)" class="md-icon-button">

@@ -1,6 +1,6 @@
 (function() {
     angular.module('socialApp')
-        .controller('filledUpFormController', ['$scope', function($scope) {
+        .controller('filledUpFormController', ['$scope' ,function($scope) {
             $scope.dis = {
                 category: "",
                 duration: "",
@@ -28,6 +28,9 @@
             }, {
                 value: 10
             }];
+
+
+          
 
         }]);
 })();
